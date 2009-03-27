@@ -2,6 +2,6 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 jQuery("#shell").corner("32px");
-jQuery("#shell .banner").corner("24px top");
+jQuery("#shell .banner").corner("24px tl");
 
 $("#tech_logos").cycle();
