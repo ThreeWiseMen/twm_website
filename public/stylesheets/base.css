@@ -220,6 +220,10 @@ ul#submenu li a:hover {
     background-color: #e0e0e0;
 }
 
+#home_body .contentpanel {
+    padding: 16px 40px 0px 40px;
+}
+
 #home_body .service1 {
     position: relative;
     float: left;
