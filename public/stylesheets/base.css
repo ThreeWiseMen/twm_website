@@ -59,9 +59,19 @@ a.linkmarker {
 }
 
 #shell .banner {
+    position: relative;
     background: #006f44 url(/images/banner-background.png) no-repeat scroll top left;
     height: 180px;
     width: 100%;
+}
+
+#shell .banner .banner_right {
+    position: absolute;
+    width: 260px;
+    height: 60px;
+    top: 0px;
+    left: 700px;
+    background: #fff url(/images/banner-right.png);
 }
 
 #shell .banner .contact_info {
@@ -186,6 +196,7 @@ ul#submenu li a:hover {
 }
 
 #home_body .service1 {
+    position: relative;
     float: left;
     width: 152px;
     height: 340px;
@@ -195,30 +206,30 @@ ul#submenu li a:hover {
 }
 
 #home_body .service1 img {
-    margin: 36px 0px 8px 0px;
+    position: absolute;
+    top: 68px;
+    left: 68px;
 }
 
-#home_body .service2 img {
-    margin: 36px 0px 8px 0px;
-}
-
-#home_body .service3 img {
-    margin: 36px 0px 8px 0px;
-}
-
-#home_body .service1 h2,p {
+#home_body .service1 h2 {
+    position: absolute;
+    top: 140px;
     text-align: left;
 }
 
-#home_body .service2 h2,p {
+#home_body .service1 p {
+    position: absolute;
+    top: 190px;
     text-align: left;
 }
 
-#home_body .service3 h2,p {
-    text-align: left;
+#home_body .service1 p.more {
+    position: relative;
+    top: 300px;
 }
 
 #home_body .service2 {
+    position: relative;
     float: left;
     width: 152px;
     height: 340px;
@@ -227,13 +238,60 @@ ul#submenu li a:hover {
     text-align: center;
 }
 
+#home_body .service2 img {
+    position: absolute;
+    top: 68px;
+    left: 68px;
+}
+
+#home_body .service2 h2 {
+    position: absolute;
+    top: 140px;
+    text-align: left;
+}
+
+#home_body .service2 p {
+    position: absolute;
+    top: 170px;
+    text-align: left;
+}
+
+#home_body .service2 p.more {
+    position: relative;
+    top: 300px;
+}
+
 #home_body .service3 {
+    position: relative;
     float: left;
     width: 152px;
     height: 340px;
     padding: 16px 24px 0px 24px;
     background-color: #f8f8f8;
     text-align: center;
+}
+
+#home_body .service3 img {
+    position: absolute;
+    top: 68px;
+    left: 68px;
+}
+
+#home_body .service3 h2 {
+    position: absolute;
+    top: 140px;
+    text-align: left;
+}
+
+#home_body .service3 p {
+    position: absolute;
+    top: 170px;
+    text-align: left;
+}
+
+#home_body .service3 p.more {
+    position: absolute;
+    top: 320px;
 }
 
 #home_body .bottom {
