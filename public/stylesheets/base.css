@@ -148,7 +148,7 @@ a.linkmarker {
 	text-decoration: none;
 	padding-right: 22px;
 	padding-left: 22px;
-	background-image: url(/images/menu-background.png);
+	background-image: url(/images/nav/menu-background.png);
 }
 
 #mainmenu a {
@@ -177,10 +177,10 @@ a.linkmarker {
 	color: #bbb;
 }
 
-#mainmenu #active a {
+#mainmenu .active a {
 	padding-top: 18px;
 	 height: 37px;
-	background:url(/images/nav/menu-active.png) no-repeat center top; 
+	background: transparent url(/images/nav/menu-active.png) no-repeat center top;
 	color:#fff;
 }
 
@@ -199,7 +199,7 @@ ul#submenu {
     list-style-type: none;
     margin: 0px;
     height: 36px;
-    background-image: url(/images/submenu-background.png);
+    background-image: url(/images/nav/submenu-background.png);
 }
 
 ul#submenu li {
@@ -228,7 +228,7 @@ ul#submenu li a:hover {
 #home_body .submenu_shadow {
     position: absolute;
     z-index: 100;
-    background: transparent url(/images/submenu-shadow.png) repeat-x scroll;
+    background: transparent url(/images/nav/submenu-shadow.png) repeat-x scroll;
     width: 960px;
     height: 12px;
 }
