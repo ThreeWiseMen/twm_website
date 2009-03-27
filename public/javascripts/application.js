@@ -3,3 +3,5 @@
 
 jQuery("#shell").corner("32px");
 jQuery("#shell .banner").corner("24px top");
+
+$("#tech_logos").cycle();

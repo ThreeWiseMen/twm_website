@@ -67,11 +67,22 @@ a.linkmarker {
 
 #shell .banner .banner_right {
     position: absolute;
-    width: 260px;
+    width: 160px;
     height: 60px;
     top: 0px;
     left: 700px;
+    padding-left: 100px;
     background: #fff url(/images/banner-right.png);
+}
+
+#tech_logos {
+    width: 140px;
+    height: 44px;
+    margin: 8px auto 0px auto;
+}
+
+#tech_logos img {
+    margin: auto;
 }
 
 #shell .banner .contact_info {
