@@ -29,7 +29,7 @@ p {
 blockquote {
 }
 
-a:link {
+a:link,a:visited {
     color: #903618;
     text-decoration: none;
 }
@@ -154,7 +154,7 @@ ul#menu li a {
     text-decoration: none;
 }
 
-ul#menu li a:link {
+ul#menu li a:link,ul#menu li a:visited {
     position: relative;
     display: block;
     height: 38px;
@@ -191,7 +191,7 @@ ul#submenu li a {
     text-decoration: none;
 }
 
-ul#submenu li a:link {
+ul#submenu li a:link,ul#submenu li a:visited {
     color: #B2DED1;
 }
 
