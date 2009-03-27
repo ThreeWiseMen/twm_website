@@ -221,7 +221,8 @@ ul#submenu li a:hover {
 }
 
 #home_body .contentpanel {
-    padding: 16px 40px 0px 40px;
+    min-height: 250px;
+    padding: 16px 40px 16px 40px;
 }
 
 #home_body .service1 {
