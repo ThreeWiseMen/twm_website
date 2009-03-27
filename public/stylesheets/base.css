@@ -2,6 +2,7 @@
     Blue:       152E48
     Lt Green:   B2DED1
     Green:      006F44
+    Brown:      903618
 */
 
 body {
@@ -26,7 +27,21 @@ p {
 }
 
 blockquote {
-    font-size: 9pt;
+}
+
+a:link {
+    color: #903618;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a.linkmarker {
+    background: transparent url(/images/link-marker.png) no-repeat left;
+    padding: 0px 0px 2px 22px;
 }
 
 #shell {
@@ -79,6 +94,7 @@ blockquote {
 
 #shell .banner .quote {
     font-family: Georgia, "Times New Roman", "Times Roman", serif;
+    font-size: 9pt;
     width: 450px;
     position: relative;
     top: -18px;
