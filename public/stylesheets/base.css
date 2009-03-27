@@ -236,7 +236,7 @@ ul#submenu li a:hover {
 #home_body .mainpanel {
     float: left;
     width: 280px;
-    height: 340px;
+    height: 240px;
     padding: 16px 40px 0px 40px;
     background-color: #e0e0e0;
 }
@@ -250,7 +250,7 @@ ul#submenu li a:hover {
     position: relative;
     float: left;
     width: 152px;
-    height: 340px;
+    height: 240px;
     padding: 16px 24px 0px 24px;
     background-color: #e8e8e8;
     text-align: center;
@@ -258,32 +258,34 @@ ul#submenu li a:hover {
 
 #home_body .service1 img {
     position: absolute;
-    top: 68px;
+    top: 20px;
     left: 68px;
 }
 
 #home_body .service1 h2 {
     position: absolute;
-    top: 140px;
+    top: 92px;
     text-align: left;
 }
 
 #home_body .service1 p {
     position: absolute;
-    top: 190px;
+    top: 142px;
+    width: 152px;
+    font-size: 9.5pt;
     text-align: left;
 }
 
 #home_body .service1 p.more {
-    position: relative;
-    top: 300px;
+    position: absolute;
+    top: 226px;
 }
 
 #home_body .service2 {
     position: relative;
     float: left;
     width: 152px;
-    height: 340px;
+    height: 240px;
     padding: 16px 24px 0px 24px;
     background-color: #f0f0f0;
     text-align: center;
@@ -291,32 +293,34 @@ ul#submenu li a:hover {
 
 #home_body .service2 img {
     position: absolute;
-    top: 68px;
+    top: 20px;
     left: 68px;
 }
 
 #home_body .service2 h2 {
     position: absolute;
-    top: 140px;
+    top: 92px;
     text-align: left;
 }
 
 #home_body .service2 p {
     position: absolute;
-    top: 170px;
+    top: 122px;
+    width: 152px;
+    font-size: 9.5pt;
     text-align: left;
 }
 
 #home_body .service2 p.more {
-    position: relative;
-    top: 300px;
+    position: absolute;
+    top: 226px;
 }
 
 #home_body .service3 {
     position: relative;
     float: left;
     width: 152px;
-    height: 340px;
+    height: 240px;
     padding: 16px 24px 0px 24px;
     background-color: #f8f8f8;
     text-align: center;
@@ -324,25 +328,27 @@ ul#submenu li a:hover {
 
 #home_body .service3 img {
     position: absolute;
-    top: 68px;
+    top: 20px;
     left: 68px;
 }
 
 #home_body .service3 h2 {
     position: absolute;
-    top: 140px;
+    top: 92px;
     text-align: left;
 }
 
 #home_body .service3 p {
     position: absolute;
-    top: 170px;
+    top: 122px;
+    width: 152px;
+    font-size: 9.5pt;
     text-align: left;
 }
 
 #home_body .service3 p.more {
     position: absolute;
-    top: 320px;
+    top: 226px;
 }
 
 #home_body .bottom {
