@@ -1,0 +1,228 @@
+/*
+    Blue:       152E48
+    Lt Green:   B2DED1
+    Green:      006F44
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    margin: 0px;
+    background: #444 url(/images/background-gradient.png) repeat-x scroll top;
+    color: #444;
+}
+
+h1 {
+    font-size: 14pt;
+    color: #2a5e8b;
+}
+
+h2 {
+    font-size: 12pt;
+    color: #2a5e8b;
+}
+
+p {
+}
+
+blockquote {
+    font-size: 9pt;
+}
+
+#shell {
+    margin: 12px auto;
+    width: 960px;
+    padding: 12px;
+    background-color: #fff;
+}
+
+#copyright {
+    text-align: center;
+    margin: 12px auto;
+    width: 960px;
+    color: #282828;
+}
+
+#shell .banner {
+    background: #006f44 url(/images/banner-background.png) no-repeat scroll top left;
+    height: 180px;
+    width: 100%;
+}
+
+#shell .banner .contact_info {
+    text-align: center;
+    font-size: 9pt;
+    color: #152E48;
+    width: 100px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+
+#shell .banner .left_quote {
+    width: 32px;
+    height: 26px;
+    background-image: url(/images/left-quote-web.png);
+    position: relative;
+    top: 34px;
+    left: 380px;
+}
+
+#shell .banner .right_quote {
+    width: 32px;
+    height: 26px;
+    background-image: url(/images/right-quote-web.png);
+    position: relative;
+    top: 8px;
+    left: 900px;
+}
+
+#shell .banner .quote {
+    font-family: Georgia, "Times New Roman", "Times Roman", serif;
+    width: 450px;
+    position: relative;
+    top: -18px;
+    left: 432px;
+}
+
+#shell .banner .quote blockquote {
+    margin: 0px;
+    font-style: italic;
+    color: black;
+}
+
+#shell .banner .quote .credit {
+    text-align: right;
+    color: black;
+}
+
+ul#menu {
+    clear: both;
+    list-style-type: none;
+    margin: 0px;
+    height: 56px;
+    background-image: url(/images/menu-background.png);
+}
+
+ul#menu li {
+    float: left;
+    margin: 18px 30px 18px 10px;
+    font-size: 12pt;
+}
+
+ul#menu li a {
+    text-decoration: none;
+}
+
+ul#menu li a:link {
+    color: #bbb;
+}
+
+ul#menu li a:hover {
+    color: #fff;
+}
+
+ul#submenu {
+    clear:both;
+    list-style-type: none;
+    margin: 0px;
+    height: 36px;
+    background-image: url(/images/submenu-background.png);
+}
+
+ul#submenu li {
+    float: left;
+    margin: 10px;
+    font-size: 10pt;
+}
+
+ul#submenu li a {
+    text-decoration: none;
+}
+
+ul#submenu li a:link {
+    color: #B2DED1;
+}
+
+ul#submenu li a:hover {
+    color: #fff;
+}
+
+#shell #home_body {
+    min-height: 12px;
+    clear: both;
+}
+
+#home_body .submenu_shadow {
+    position: absolute;
+    z-index: 100;
+    background: transparent url(/images/submenu-shadow.png) repeat-x scroll;
+    width: 960px;
+    height: 12px;
+}
+
+#home_body .mainpanel {
+    float: left;
+    width: 280px;
+    height: 340px;
+    padding: 16px 40px 0px 40px;
+    background-color: #e0e0e0;
+}
+
+#home_body .service1 {
+    float: left;
+    width: 152px;
+    height: 340px;
+    padding: 16px 24px 0px 24px;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+#home_body .service1 img {
+    margin: 36px 0px 8px 0px;
+}
+
+#home_body .service2 img {
+    margin: 36px 0px 8px 0px;
+}
+
+#home_body .service3 img {
+    margin: 36px 0px 8px 0px;
+}
+
+#home_body .service1 h2,p {
+    text-align: left;
+}
+
+#home_body .service2 h2,p {
+    text-align: left;
+}
+
+#home_body .service3 h2,p {
+    text-align: left;
+}
+
+#home_body .service2 {
+    float: left;
+    width: 152px;
+    height: 340px;
+    padding: 16px 24px 0px 24px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#home_body .service3 {
+    float: left;
+    width: 152px;
+    height: 340px;
+    padding: 16px 24px 0px 24px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#home_body .bottom {
+    clear: both;
+    width: 960px;
+    height: 30px;
+    background-image: url(/images/home-bodybottom.png);
+}
