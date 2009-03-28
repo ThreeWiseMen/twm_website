@@ -48,7 +48,7 @@
             </div>
         </div>
         <ul id="mainmenu">
-            <li class="first <%= sense_page("home", "index") %>"><%= link_to "Home", :controller => "home", :action => "index"  %></li>
+            <li class="<%= sense_page("home", "index") %>"><%= link_to "Home", :controller => "home", :action => "index"  %></li>
             <li class="<%= sense_page("home", "dev") %>"><%= link_to "Application Development", :controller => "home", :action => "dev" %></li>
             <li class="<%= sense_page("home", "hosting") %>"><%= link_to "Application Hosting", :controller => "home", :action => "hosting" %></li>
             <li class="<%= sense_page("home", "success") %>"><%= link_to "Success Stories", :controller => "home", :action => "success" %></li>

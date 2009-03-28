@@ -158,13 +158,13 @@ ul#mainmenu li a {
 	color: #5B920A;
 }
 
-ul#mainmenu li.active a {
+ul#mainmenu li.active a, ul#mainmenu li:first-child.active a {
 	padding-top: 18px;
 	background: transparent url(/images/nav/menu-active.png) no-repeat center top;
 	color:#fff;
 }
 
-ul#mainmenu .first a {
+ul#mainmenu li:first-child a {
 	background: none;
 }
 
