@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'jquery.cycle.all.min' %>
     <%= javascript_include_tag 'jquery.easing.1.3' %>
     <%= javascript_include_tag 'jquery.qtip-1.0.0-beta3.1.min' %>
-    <%= javascript_include_tag 'jquery.curvycorners.packed' %>
+    <%= javascript_include_tag 'jquery.corner' %>
     <%= javascript_include_tag 'application' %>
 </head>
 <body onLoad="init()">
@@ -56,8 +56,8 @@
             <li class="<%= sense_page("tools", "index") %>"><%= link_to "Customer Tools", :controller => "home", :controller => "tools", :action => "index" %></li>
         </ul>
         <ul id="submenu">
-            <li><a href="content.html">Technologies</a></li>
-            <li><a href="content.html">Partnerships</a></li>
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">Partnerships</a></li>
         </ul>
         <div id="home_body">
             <div class="submenu_shadow"></div>
