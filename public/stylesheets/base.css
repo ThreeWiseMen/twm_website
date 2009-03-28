@@ -40,8 +40,8 @@ a:hover {
 }
 
 a.linkmarker {
-    background: transparent url(/images/link-marker.png) no-repeat left;
-    padding: 0px 0px 2px 22px;
+    background: transparent url(/images/link-marker.png) no-repeat top left;
+    padding: 0px 0px 0px 22px;
 }
 
 #shell {
@@ -133,71 +133,58 @@ a.linkmarker {
     color: black;
 }
 
-
-
-#main {background:url(/images/nav/pagebg.png) repeat-y; padding:2px 9px 0 9px; margin:0;}
-#menus {background:url(/images/nav/menu.jpg) no-repeat; width:936px; margin:0 auto 10px auto; height:88px;}
-
-
-#mainmenu {
-  clear: both;
-  position: relative;
-  list-style-type: none;
-  margin: 0px;
-  height: 56px;
-	text-decoration: none;
-	padding-right: 22px;
-	padding-left: 22px;
-	background-image: url(/images/nav/menu-background.png);
+ul#mainmenu {
+    clear: both;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 22px 0 22px;
+    height: 56px;
+    text-decoration: none;
+    background-image: url(/images/nav/menu-background.png);
 }
 
-#mainmenu a {
-	display: block;
-	height: 37px;
-	padding-right: 25px;
-	padding-left: 25px;
-	float: left;
-	font-size: 14px;
-	text-decoration: none;
-	padding-top: 19px;
-	background: url(/images/nav/menudevider.png) no-repeat 0px 3px;
-	color: #5B920A;
-}
-
-#mainmenu .first a {
-	background: none;
-}
-
-#mainmenu li {
+ul#mainmenu li {
 	display: inline;
 }
 
-#mainmenu a:visited, #mainmenu a:active {
-	text-decoration:none; 
-	color: #bbb;
+ul#mainmenu li a {
+	display: block;
+	height: 37px;
+    padding: 19px 25px 0 25px;
+	float: left;
+	font-size: 14px;
+	background: url(/images/nav/menudivider.png) no-repeat 0px 3px;
+	color: #5B920A;
 }
 
-#mainmenu .active a {
+ul#mainmenu li.active a {
 	padding-top: 18px;
-	 height: 37px;
 	background: transparent url(/images/nav/menu-active.png) no-repeat center top;
 	color:#fff;
 }
 
-#mainmenu a:hover {
-	top: -2px;
-  height: 37px;
-  padding-top: 19px;
-	background:url(/images/nav/menu-hover.png) no-repeat center top;
-	color:#fff;
+ul#mainmenu .first a {
+	background: none;
 }
 
+ul#mainmenu a:link, ul#mainmenu a:visited, ul#mainmenu a:active {
+	text-decoration:none; 
+	color: #bbb;
+}
 
+ul#mainmenu a:hover {
+    height: 37px;
+    padding-top: 19px;
+	background: url(/images/nav/menu-hover.png) no-repeat center top;
+	color:#fff;
+}
 
 ul#submenu {
     clear:both;
     list-style-type: none;
-    margin: 0px;
+    margin: 0;
+    padding: 0 22px 0 44px;
     height: 36px;
     background-image: url(/images/nav/submenu-background.png);
 }
@@ -257,28 +244,24 @@ ul#submenu li a:hover {
 }
 
 #home_body .service1 img {
-    position: absolute;
-    top: 20px;
-    left: 68px;
+    margin: 24px 0 0 0;
 }
 
 #home_body .service1 h2 {
-    position: absolute;
-    top: 92px;
+    margin: 12px 0 0 0;
     text-align: left;
 }
 
 #home_body .service1 p {
-    position: absolute;
-    top: 142px;
-    width: 152px;
+    margin: 12px 0 0 0;
     font-size: 9.5pt;
     text-align: left;
 }
 
 #home_body .service1 p.more {
     position: absolute;
-    top: 226px;
+    top: 240px;
+    left: 24px;
 }
 
 #home_body .service2 {
@@ -292,28 +275,24 @@ ul#submenu li a:hover {
 }
 
 #home_body .service2 img {
-    position: absolute;
-    top: 20px;
-    left: 68px;
+    margin: 24px 0 0 0;
 }
 
 #home_body .service2 h2 {
-    position: absolute;
-    top: 92px;
+    margin: 12px 0 0 0;
     text-align: left;
 }
 
 #home_body .service2 p {
-    position: absolute;
-    top: 122px;
-    width: 152px;
+    margin: 12px 0 0 0;
     font-size: 9.5pt;
     text-align: left;
 }
 
 #home_body .service2 p.more {
     position: absolute;
-    top: 226px;
+    top: 240px;
+    left: 24px;
 }
 
 #home_body .service3 {
@@ -327,28 +306,24 @@ ul#submenu li a:hover {
 }
 
 #home_body .service3 img {
-    position: absolute;
-    top: 20px;
-    left: 68px;
+    margin: 24px 0 0 0;
 }
 
 #home_body .service3 h2 {
-    position: absolute;
-    top: 92px;
+    margin: 12px 0 0 0;
     text-align: left;
 }
 
 #home_body .service3 p {
-    position: absolute;
-    top: 122px;
-    width: 152px;
+    margin: 12px 0 0 0;
     font-size: 9.5pt;
     text-align: left;
 }
 
 #home_body .service3 p.more {
     position: absolute;
-    top: 226px;
+    top: 240px;
+    left: 24px;
 }
 
 #home_body .bottom {
