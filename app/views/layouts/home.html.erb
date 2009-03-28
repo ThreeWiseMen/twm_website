@@ -4,13 +4,13 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Three Wise Men Inc. Software Development and Consulting - 416-848-0709</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/base.css" />
-    <script src="/javascripts/jquery-1.3.2.min.js"></script>
-    <script src="/javascripts/jquery.cycle.all.min.js"></script>
-    <script src="/javascripts/jquery.easing.1.3.js"></script>
-    <script src="/javascripts/jquery.qtip-1.0.0-beta3.1.min.js"></script>
-    <script src="/javascripts/jquery.corner.js"></script>
-    <script src="/javascripts/application.js"></script>
+    <%= stylesheet_link_tag 'base' %>
+    <%= javascript_include_tag 'jquery-1.3.2.min' %>
+    <%= javascript_include_tag 'jquery.cycle.all.min' %>
+    <%= javascript_include_tag 'jquery.easing.1.3' %>
+    <%= javascript_include_tag 'jquery.qtip-1.0.0-beta3.1.min' %>
+    <%= javascript_include_tag 'jquery.corner' %>
+    <%= javascript_include_tag 'application' %>
 </head>
 <body>
     <div id="shell">
@@ -48,12 +48,12 @@
             </div>
         </div>
         <ul id="mainmenu">
-            <li class="first active"><%= link_to "Home", :action => "index"  %></li>
-            <li><%= link_to "Software Development", :action => "content" %></li>
-            <li><%= link_to "Application Hosting", :action => "content" %></li>
-            <li><%= link_to "Success Stories", :action => "content" %></li>
-            <li><%= link_to "Contact Us", :action => "content" %></li>
-            <li><%= link_to "Customer Tools", :action => "content" %></li>
+            <li class="first active"><%= link_to "Home", :controller => "home", :action => "index"  %></li>
+            <li><%= link_to "Application Development", :controller => "home", :action => "dev" %></li>
+            <li><%= link_to "Application Hosting", :controller => "home", :action => "hosting" %></li>
+            <li><%= link_to "Success Stories", :controller => "home", :action => "success" %></li>
+            <li><%= link_to "Contact Us", :controller => "home", :action => "contact" %></li>
+            <li><%= link_to "Customer Tools", :controller => "home", :controller => "tools", :action => "index" %></li>
         </ul>
         <ul id="submenu">
             <li><a href="content.html">Technologies</a></li>
