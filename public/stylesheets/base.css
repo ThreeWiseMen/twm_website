@@ -208,12 +208,14 @@ ul#submenu li a:hover {
 }
 
 #shell #home_body {
+    position: relative;
     min-height: 12px;
     clear: both;
 }
 
 #home_body .submenu_shadow {
     position: absolute;
+    top: 0px;
     z-index: 100;
     background: transparent url(/images/nav/submenu-shadow.png) repeat-x scroll;
     width: 960px;
