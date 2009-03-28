@@ -10,15 +10,15 @@
 function init() {
 
     $("#shell").corner({
-        tl: { radius: 32 },
-        tr: { radius: 32 },
-        bl: { radius: 32 },
-        br: { radius: 32 }
+        tl: { radius: 28 },
+        tr: { radius: 28 },
+        bl: { radius: 28 },
+        br: { radius: 28 }
     });
 
     $("#shell .banner").corner({
-        tl: { radius: 28 },
-        tr: { radius: 28 }
+        tl: { radius: 25 },
+        tr: { radius: 25 }
     })
 
     $("#tech_logos").cycle();
