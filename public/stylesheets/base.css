@@ -8,8 +8,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    margin: 0px;
-    background: #444 url(/images/background-gradient.png) repeat-x scroll top;
+    margin: 36px;
+    background: #444; /* url(/images/background-gradient.png) repeat-x scroll top; */
     color: #444;
 }
 
@@ -46,8 +46,8 @@ a.linkmarker {
 
 #shell {
     margin: 12px auto;
-    width: 960px;
-    padding: 12px;
+    width: 970px;
+    padding: 33px 5px 5px 5px;
     background-color: #fff;
 }
 
@@ -62,17 +62,17 @@ a.linkmarker {
     position: relative;
     background: #006f44 url(/images/banner-background.png) no-repeat scroll top left;
     height: 180px;
-    width: 100%;
+    width: 960px;
 }
 
 #shell .banner .banner_right {
     position: absolute;
     width: 160px;
-    height: 60px;
+    height: 59px;
     top: 0px;
     left: 700px;
     padding-left: 100px;
-    background: #fff url(/images/banner-right.png);
+    background: transparent url(/images/banner-right.png);
 }
 
 #tech_logos {

@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
 
-  caches_page :index, :contact, :dev, :hosting, :success
+  #caches_page :index, :contact, :dev, :hosting, :success
 
 end
