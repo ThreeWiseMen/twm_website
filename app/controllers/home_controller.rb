@@ -9,7 +9,6 @@ class HomeController < ApplicationController
 
   def index
     @blog_item = get_feed.entries.first
-    logger.info "Using feed entry #{@blog_item.id}"
   end
 
   def blogentry

@@ -1,7 +1,7 @@
 <div class="mainpanel">
     <h1><%= @blog_item.title %></h1>
     <p>
-        <%= @blog_item.summary %>
+        <%= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
     </p>
     <p><%= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %></p>
 </div>
