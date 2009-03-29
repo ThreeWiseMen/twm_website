@@ -3,7 +3,7 @@
     <p>
         <%= @blog_item.summary %>
     </p>
-    <p><%= link_to "read more...", { :action => "blogentry", :url => url_encode(@blog_item.id) }, :class => "linkmarker" %></p>
+    <p><%= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %></p>
 </div>
 <div class="service1">
     <img src="/images/development.png" />

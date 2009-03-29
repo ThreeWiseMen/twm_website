@@ -9,17 +9,13 @@ class HomeController < ApplicationController
 
   def index
     @blog_item = get_feed.entries.first
-  end
-
-  def latest
-    item = get_feed.entries.first
-    @title = "#{item.title} (#{item.id})"
-    @content = item.methods.sort.join("<br />") #item.content
+    logger.info "Using feed entry #{@blog_item.id}"
   end
 
   def blogentry
+    id = "http://svetzal.wordpress.com/?p=#{params[:id]}"
     get_feed.entries.each do |entry|
-      if entry.id == URI.unescape(params[:url])
+      if entry.id == id
         @title = entry.title
         @content = entry.content
       end
