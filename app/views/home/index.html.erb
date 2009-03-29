@@ -1,12 +1,9 @@
 <div class="mainpanel">
-    <h1>Reducing Software Costs using Open Source Components</h1>
+    <h1><%= @title %></h1>
     <p>
-        I read an article (well, it’s more of a slideshow) this morning that just set my hair on
-        fire. Now I understand that to many folks in I.T., outsourcing is analogous to offshoring.
-        So I can understand at some level why an article lie this would be published. Now I
-        level why an article lie this would be published.
+        <%= @description %>
     </p>
-    <p><%= link_to "read more...", { :action => "content" }, :class => "linkmarker" %></p>
+    <p><%= link_to "read more...", { :action => "latest" }, :class => "linkmarker" %></p>
 </div>
 <div class="service1">
     <img src="/images/development.png" />
