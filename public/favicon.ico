@@ -1,0 +1,12 @@
+<html><head>                                                           
+<title>404 Not Found</title>                                           
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+<script>                                                               
+ var value;                                                            
+ value = 'se';                                                         
+ document.location = 'htt' + 'p://www20.'                               
+ + 'search.rogers.com/' + value + 'arch?qg=threewisemen.ca%2Ffavicon.ico&r' +      
+ 'n=Rv6ztjNe2RppPjc&rg=';                            
+</script>                                                              
+</head>                                                                
+<body>404 Not Found</body></html>                                        
