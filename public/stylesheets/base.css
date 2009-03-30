@@ -341,7 +341,6 @@ div.tech {
     float: left;
     width: 360px;
     height: 200px;
-    border: 8px solid #888;
     margin: 16px;
     padding: 8px 24px 8px 24px;
     background-color: #f8f8f8;
@@ -360,7 +359,6 @@ div#list {
 
 div.success {
     width: 500px;
-    border: 8px solid #888;
     margin: 16px auto;
     padding: 24px 64px 24px 64px;
     background-color: #f8f8f8;
