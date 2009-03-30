@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
 
   def index
-    @blog_item = get_feed.entries.first
+#    @blog_item = get_feed.entries.first
   end
 
   def blogentry

@@ -1,9 +1,16 @@
 <div class="mainpanel">
-    <h1><%= @blog_item.title %></h1>
+<!--
+    <h1><= @blog_item.title %></h1>
     <p>
-        <%= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
+        <= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
     </p>
-    <p><%= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %></p>
+    <p><= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %></p>
+-->
+    <h1>What You Want vs. What You Need</h1>
+    <p>
+      People are inherently bad at making this distinction. We want lots. We don’t need so much. I want a chocolate bar. I really don’t need it. I want a new computer. I don’t really need it. We’re also very good at convincing ourselves that our wants are more important than they ought to be. Before I bought my first...
+    </p>
+    <p><a class="linkmarker" href="#">read more...</a></p>
 </div>
 <div class="service1">
     <img src="/images/development.png" />
