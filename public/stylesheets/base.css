@@ -173,10 +173,10 @@ ul#mainmenu a:link, ul#mainmenu a:visited, ul#mainmenu a:active {
 	color: #bbb;
 }
 
-ul#mainmenu a:hover {
+ul#mainmenu li a:hover {
     height: 37px;
     padding-top: 19px;
-	background: url(/images/nav/menu-hover.png) no-repeat center top;
+	background: transparent url(/images/nav/menu-hover.png) no-repeat center top;
 	color:#fff;
 }
 
