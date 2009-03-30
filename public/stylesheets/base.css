@@ -351,3 +351,22 @@ div.tech img {
     float: right;
     margin: 12px;
 }
+
+/* Success Stories */
+
+div#list {
+    margin: auto;
+}
+
+div.success {
+    width: 500px;
+    border: 8px solid #888;
+    margin: 16px auto;
+    padding: 24px 64px 24px 64px;
+    background-color: #f8f8f8;
+}
+
+div.success img {
+    float: right;
+    margin: 12px;
+}
