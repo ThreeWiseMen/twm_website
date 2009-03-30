@@ -1,8 +1,0 @@
-#! /bin/sh
-
-~/TWM-Website/current/script/process/spawner \
-  mongrel \
-  --environment=production \
-  --instances=1 \
-  --address=74.205.99.188 \
-  --port=3000
