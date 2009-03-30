@@ -169,7 +169,7 @@ ul#mainmenu li:first-child a {
 }
 
 ul#mainmenu a:link, ul#mainmenu a:visited, ul#mainmenu a:active {
-	text-decoration:none; 
+	text-decoration:none;
 	color: #bbb;
 }
 
@@ -333,4 +333,21 @@ ul#submenu li a:hover {
     width: 960px;
     height: 30px;
     background-image: url(/images/home-bodybottom.png);
+}
+
+/* Application development */
+
+div.tech {
+    float: left;
+    width: 360px;
+    height: 200px;
+    border: 8px solid #888;
+    margin: 16px;
+    padding: 8px 24px 8px 24px;
+    background-color: #f8f8f8;
+}
+
+div.tech img {
+    float: right;
+    margin: 12px;
 }
