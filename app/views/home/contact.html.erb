@@ -1,12 +1,31 @@
 <div class="contentpanel">
     <h1>Contact Us</h1>
-    <p>
-        I read an article (well, it’s more of a slideshow) this morning that just set my hair on
-        fire. Now I understand that to many folks in I.T., outsourcing is analogous to offshoring.
-        So I can understand at some level why an article lie this would be published. Now I
-        understand that to many folks in I.T., outsourcing is analogous to offshoring. So I can
-        understand at some level why an article lie this would be published. I read an article
-        to many folks in I.T., outsourcing is analogous to offshoring. So I can understand at some
-        level why an article lie this would be published.
-    </p>
+
+    <div id="map"></div>
+
+    <div id="address">
+      <p>Three Wise Men Inc.</p>
+      <p>1077 Boundary Rd., Unit 211</p>
+      <p>Oshawa, ON, Canada</p>
+      <p>L1J 8P8</p>
+    </div>
+
+    <div id="phones">
+      <p><span>Toronto:</span>+1 416 848 0709</p>
+      <p><span>Oshawa:</span>+1 905 436 2319</p>
+    </div>
+
+    <div style="clear: both"></div>
+
+<script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAHtGr9KdH_iaAjJ8MMK3ETxRC5tJD5lWLxeAc3yWhXC76UL6qUxQ-wvMdIMIzlyA_OIgwrZVcnuI3ZA" type="text/javascript"></script>
+<script type="text/javascript">
+  var map = new GMap(document.getElementById("map"));
+  var point = new GPoint(-78.88534082641602, 43.861570744481884);
+  var marker = new GMarker(point);
+  map.addControl(new GSmallMapControl());
+  map.centerAndZoom(point, 4);
+  map.addOverlay(marker);
+  marker.openInfoWindowHtml("<div id=\"address\"><strong>Three Wise Men Inc.</strong><br>Unit 211, 1077 Boundary Rd.,<br>Oshawa, ON  L1J 8P8</div>");
+</script>
+
 </div>
