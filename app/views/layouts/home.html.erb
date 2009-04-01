@@ -51,8 +51,7 @@
             <li class="<%= sense_page("tools", "index") %>"><%= link_to "Customer Tools", :controller => "home", :controller => "tools", :action => "index" %></li>
         </ul>
         <ul id="submenu">
-            <li><a href="#">Technologies</a></li>
-            <li><a href="#">Partnerships</a></li>
+            <%= yield :submenu %>
         </ul>
         <div id="home_body">
             <%= yield %>
