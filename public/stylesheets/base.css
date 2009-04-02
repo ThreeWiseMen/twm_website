@@ -359,6 +359,7 @@ div#list {
 
 div.success {
     width: 500px;
+    height: 280px;
     margin: 16px auto;
     padding: 24px 64px 24px 64px;
     background-color: #f8f8f8;
