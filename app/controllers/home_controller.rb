@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   require 'atom'
   require 'uri'
 
-  caches_page :index, :contact, :dev, :hosting, :success, :consulting
+  caches_page :contact, :dev, :hosting, :success, :consulting
 
   FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
 
