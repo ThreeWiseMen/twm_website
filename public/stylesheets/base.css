@@ -343,11 +343,6 @@ ul#submenu li a:hover {
 /* Application development */
 
 div.tech {
-    float: left;
-    width: 360px;
-    height: 200px;
-    margin: 16px;
-    padding: 8px 24px 8px 24px;
     background-color: #f0f0f0;
 }
 
