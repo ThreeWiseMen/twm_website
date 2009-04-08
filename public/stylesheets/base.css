@@ -240,6 +240,13 @@ ul#submenu li a:hover {
     padding: 16px 40px 16px 40px;
 }
 
+#home_body .contentpaneldark {
+    min-height: 254px;
+    padding: 16px 40px 16px 40px;
+		background-color: #F8F8F8;
+}
+
+
 #home_body .service1 {
     position: relative;
     float: left;
