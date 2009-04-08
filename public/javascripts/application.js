@@ -5,7 +5,10 @@ function page_init() {
 
     $("#shell").corner("28px");
     $("#shell .banner").corner("22px tl tr");
-
+		
+		document.getElementById("tech_logos").style.display='';
+		document.getElementById("tech_logos").style.visibility='';
+		
     $("#tech_logos").cycle();
 
 }
