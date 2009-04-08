@@ -23,6 +23,11 @@ h2 {
     color: #2a5e8b;
 }
 
+h3 {
+    font-size: 10pt;
+    color: #2a5e8b;
+}
+
 p {
 }
 
@@ -343,12 +348,23 @@ div.tech {
     height: 200px;
     margin: 16px;
     padding: 8px 24px 8px 24px;
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
 }
 
 div.tech img {
     float: right;
     margin: 12px;
+}
+
+/* Application Hosting */
+
+#hostingplans {
+}
+
+#hostingplans .plan {
+    background-color: #f0f0f0;
+    padding: 8px;
+    font-size: 12px;
 }
 
 /* Success Stories */

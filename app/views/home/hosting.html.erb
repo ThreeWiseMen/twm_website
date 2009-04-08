@@ -20,30 +20,118 @@
       <li>Response time guarantee</li>
     </ul>
 
-    <h2>Shared Application Hosting 1</h2>
-    <p>Designed for applications where cost is a concern, and that service less than 10,000 user sessions per month.</p>
+    <div id="hostingplans" class="ui-tabs-hide">
+      <ul>
+        <li><a href="#shared1">Shared 1</a></li>
+        <li><a href="#shared2">Shared 2</a></li>
+        <li><a href="#shared3">Shared 3</a></li>
+        <li><a href="#ded1">Dedicated 1</a></li>
+        <li><a href="#ded2">Dedicated 2</a></li>
+        <li><a href="#custom">Custom</a></li>
+      </ul>
 
-    <h2>Shared Application Hosting 2</h2>
-    <p>Designed for applications that require more CPU horsepower to do their job, and that service less than 100,000 user sessions per month.</p>
+      <div id="shared1" class="plan">
+        <h2>Shared Application Hosting 1</h2>
+        <p>Designed for applications where cost is a concern, and that service less than 10,000 user sessions per month.</p>
+        <h3>Technical Details</h3>
+        <ul>
+          <li>Application Server
+            <ul>
+              <li>2 Mongrel instances (Rails)</li>
+              <li>Tomcat instance (Java)</li>
+            </ul></li>
+          <li>Apache balancer / accelerator</li>
+          <li>MySQL or PostgreSQL database</li>
+        </ul>
+      </div>
 
-    <h2>Shared Application Hosting 3</h2>
-    <p>Designed for business critical applications that require some CPU horsepower and high availability and service less than 300,000 user sessions per month.</p>
+      <div id="shared2" class="plan">
+        <h2>Shared Application Hosting 2</h2>
+        <p>Designed for applications that require more CPU horsepower to do their job, and that service less than 100,000 user sessions per month.</p>
+        <h3>Technical Details</h3>
+        <ul>
+          <li>Application Server
+            <ul>
+              <li>4 Mongrel instances across two servers (Rails)</li>
+              <li>JBoss or Glassfish instance (Java)</li>
+            </ul></li>
+          <li>Apache balancer</li>
+          <li>Squid accelerator (optional)</li>
+          <li>MySQL or PostgreSQL database</li>
+        </ul>
+      </div>
 
-    <h2>Dedicated Application Hosting 1</h2>
-    <p>Designed for business sensitive applications that cannot be co-located with other applications on the same hardware due to strict privacy concerns, that require a specific server configuration, or require isolation for a private network connection to a corporate network.</p>
+      <div id="shared3" class="plan">
+        <h2>Shared Application Hosting 3</h2>
+        <p>Designed for business critical applications that require some CPU horsepower and high availability and service less than 300,000 user sessions per month.</p>
+        <h3>Technical Details</h3>
+        <ul>
+          <li>Application Server
+            <ul>
+              <li>12 Mongrel instances across two servers (Rails)</li>
+              <li>Two JBoss or Glassfish instances across two servers (Java)</li>
+            </ul></li>
+          <li>Apache balancer</li>
+          <li>Squid accelerator (optional)</li>
+          <li>MySQL or PostgreSQL database</li>
+        </ul>
+      </div>
 
-    <h2>Dedicated Application Hosting 2</h2>
-    <p>Designed for business critical and business sensitive applications that cannot be co-located with other applications and where the up-time of the application is critical. Two dedicated servers provide hot-failover and high performance.</p>
+      <div id="ded1" class="plan">
+        <h2>Dedicated Application Hosting 1</h2>
+        <p>Designed for business sensitive applications that cannot be co-located with other applications on the same hardware due to strict privacy concerns, that require a specific server configuration, or require isolation for a private network connection to a corporate network.</p>
+        <h3>Technical Details</h3>
+        <ul>
+          <li>Application Server
+            <ul>
+              <li>Dedicated server hardware
+              <ul>
+                <li>System optimized Mongrel instances (Rails)</li>
+                <li>JBoss or Glassfish instance (Java)</li>
+              </ul></li>
+            </ul></li>
+          <li>Apache balancer (separate device)</li>
+          <li>Squid accelerator (optional, separate device)</li>
+          <li>Choice of Windows or Linux operating system</li>
+          <li>Oracle, MySQL or PostgreSQL database on Linux or Windows</li>
+          <li>MS SQL Express or Standard database on Windows (MS SQL Standard licensing priced separately)</li>
+        </ul>
+      </div>
 
-    <h2>Custom Application Hosting</h2>
-    <p>For complex customer requirements, a custom crafted environment can be designed by our experts to meet just about any demands. Multiple physical data-centers with geo-sensitive load balancing, segmented network traffic, custom router, firewall and inter-network linkage requirements. We will work with you to find the optimal configuration for your budget and requirements.</p>
+      <div id="ded2" class="plan">
+        <h2>Dedicated Application Hosting 2</h2>
+        <p>Designed for business critical and business sensitive applications that cannot be co-located with other applications and where the up-time of the application is critical. Two dedicated servers provide hot-failover and high performance.</p>
+        <h3>Technical Details</h3>
+        <ul>
+          <li>Application Server
+            <ul>
+              <li>Two dedicated servers
+              <ul>
+                <li>System optimized Mongrel instances (Rails)</li>
+                <li>JBoss or Glassfish instances on each (Java)</li>
+              </ul></li>
+            </ul></li>
+          <li>Apache balancer (separate device)</li>
+          <li>Squid accelerator (optional, separate device)</li>
+          <li>Choice of Windows or Linux operating system</li>
+          <li>Oracle, MySQL or PostgreSQL database on Linux or Windows</li>
+          <li>MS SQL Express or Standard database on Windows (MS SQL Standard licensing priced separately)</li>
+        </ul>
+      </div>
 
-    <h2>Additonal Services</h2>
-    <ul>
-      <li>Performance audit and analysis</li>
-      <li>Security audit and analysis</li>
-      <li>CDN (Content Delivery Network) integration</li>
-      <li>Media (streaming video and audio) services integration</li>
-    </ul>
+      <div id="custom" class="plan">
+        <h2>Custom Application Hosting</h2>
+        <p>For complex customer requirements, a custom crafted environment can be designed by our experts to meet just about any demands. Multiple physical data-centers with geo-sensitive load balancing, segmented network traffic, custom router, firewall and inter-network linkage requirements. We will work with you to find the optimal configuration for your budget and requirements.</p>
+      </div>
 
+    </div>
+    <div style="clear: both"></div>
+
+    <script type="text/javascript">
+      $(function() {
+        $("#hostingplans").tabs({
+          fx: { opacity: 'toggle', duration: 'fast' },
+        });
+      });
+    </script>
 </div>
