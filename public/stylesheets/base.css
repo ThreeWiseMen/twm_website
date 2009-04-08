@@ -350,7 +350,7 @@ ul#submenu li a:hover {
 /* Application development */
 
 div.tech {
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 div.tech img {
@@ -364,7 +364,7 @@ div.tech img {
 }
 
 #hostingplans .plan {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 8px;
     font-size: 12px;
 }
@@ -380,12 +380,13 @@ div.success {
     height: 250px;
     margin: 16px auto;
     padding: 12px 64px 24px 64px;
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 
 div.success img {
     float: right;
     margin: 12px;
+    border: 1px solid #ccc;
 }
 
 /* Contact Us */
