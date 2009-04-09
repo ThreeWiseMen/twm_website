@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
-
+  require 'rubygems'
   require 'atom'
   require 'uri'
+  require 'hpricot'
 
   caches_page :contact, :dev, :hosting, :success, :consulting
 
@@ -16,11 +17,11 @@ class HomeController < ApplicationController
     get_feed.entries.each do |entry|
       if entry.id == id
         @title = entry.title
-        @content = entry.content
+        @content = Hpricot(entry.content, :xhtml_strict => true)
       end
     end
     redirect_to "/404.html" if @title.nil?
-  end
+  end 
 
   private
 
