@@ -46,7 +46,7 @@ a:hover {
 
 a.linkmarker {
     background: transparent url(/images/link-marker.png) no-repeat top left;
-    padding: 0px 0px 0px 22px;
+    padding: 0px 0px 5px 22px;
 }
 
 #shell {
