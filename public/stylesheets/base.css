@@ -389,6 +389,29 @@ div.success img {
     border: 1px solid #ccc;
 }
 
+div#nav {
+    margin: 16px 0px -12px 0px;
+    text-align: center;
+}
+
+div#nav a {
+    display: inline;
+    padding: 10px;
+    color: #000;
+    background: transparent url(/images/circlenav.png) no-repeat scroll center center;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+div#nav a.activeSlide {
+    color: #fff;
+    background: transparent url(/images/circlenav_selected.png) no-repeat scroll center center;
+}
+
+div#nav a:focus {
+    outline: none;
+}
+
 /* Contact Us */
 
 #address {
