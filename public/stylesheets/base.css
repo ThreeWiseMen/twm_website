@@ -32,6 +32,7 @@ p {
 }
 
 blockquote {
+	top: -18px;
 }
 
 a:link,a:visited {
@@ -127,7 +128,7 @@ a.linkmarker {
     left: 432px;
 }
 
-#shell .banner .quote blockquote {
+#shell .banner .quote .blockquote {
     margin: 0px;
     font-style: italic;
     color: black;
