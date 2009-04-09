@@ -2,8 +2,14 @@
     <h1>Application Development Services</h1>
 
     <p>
-      Outsource those nagging projects to a local team that can get them off your plate and off your
+      Outsource those nagging projects to a
+      <%= link_to "local, cost-effective team", { :action => "blogentry", :id => 101 } %>
+      that can get them off your plate and off your
       mind, letting you focus on those things that only you can do.
+      Not only can we help in getting some of that work done, we can
+      <%= link_to "show you a better way to work", { :action => "blogentry", :id => 116 } %>
+      with external development teams.
+      <strong>Why wait to get the ball rolling? Call us today.</strong>
     </p>
 
     <div id="technologies">
@@ -22,6 +28,13 @@
           <li>Efficient for assembly of line-of-business form and data driven applications.</li>
           <li>Powerful and compatible server-side processing abilities.</li>
         </ul>
+
+        <h3>Sample Work</h3>
+        <p>It's hard for us to come up with a lot of these, most of our projects are internal or private applications that the public can't see. Here's a couple, though:</p>
+        <ul>
+          <li><a href="http://groceries.demo.threewisemen.ca">Online grocery shopping (JBoss AS, Seam, Hibernate)</a></li>
+          <li><a href="http://easybrandingtools.com">One-stop brand creation for startups (Multi-tenant content transformation and publishing engine, JBoss AS, JCR)</a></li>
+        </ul>
         <div style="clear: both"></div>
       </div>
 
@@ -30,6 +43,11 @@
         <h2>Ruby On Rails</h2>
         <ul>
           <li>The most powerful and agile development framework gets your web initiatives online faster.</li>
+        </ul>
+        <h3>Sample Work</h3>
+        <p>It's hard for us to come up with a lot of these, most of our projects are internal or private applications that the public can't see. Here's a couple, though:</p>
+        <ul>
+          <li><a href="http://easybrandingtools.com">One-stop brand creation for startups (Rails front-end, External APIs from Elavon Canada, OpenSRS)</a></li>
         </ul>
         <div style="clear: both"></div>
       </div>
@@ -41,6 +59,11 @@
           <li>Leverage powerful desktop 3D and media capabilities on Windows desktops.</li>
           <li>Efficient for assemby of line-of-business form and data driven applications.</li>
         </ul>
+        <h3>Sample Work</h3>
+        <ul>
+          <li>User-interface for identity management web-services</li>
+          <li>Resume collection and management tool for HR</li>
+        </ul>
         <div style="clear: both"></div>
       </div>
 
@@ -51,6 +74,11 @@
           <li>The most powerful open-source database engine.</li>
           <li>Get your applications online with advanced functionality while reducing infrastructure costs.</li>
         </ul>
+        <h3>Sample Work</h3>
+        <ul>
+          <li>Performance optimized data collection and logging with reporting and rollups</li>
+          <li>Balanced schema creation to meet a specific goal (size, transactional performance, data-mining performance)</li>
+        </ul>
         <div style="clear: both"></div>
       </div>
 
@@ -58,7 +86,8 @@
 
     <script type="text/javascript">
       $("#technologies").tabs({
-        fx: { opacity: 'toggle', duration: 'fast' }
+        fx: { opacity: 'toggle', duration: 'fast' },
+        cookie: { expires: 1 }
       });
     </script>
 
