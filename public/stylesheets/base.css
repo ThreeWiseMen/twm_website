@@ -360,6 +360,14 @@ div.tech img {
     margin: 12px;
 }
 
+/* Consulting */
+
+#consultingrealms .realm {
+    background-color: #fff;
+    padding: 8px;
+    font-size: 12px;
+}
+
 /* Application Hosting */
 
 #hostingplans {
