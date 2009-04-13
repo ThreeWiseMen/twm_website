@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   require 'uri'
 #  require 'hpricot'
 
-  caches_page :contact, :dev, :hosting, :success, :consulting
+  caches_page :contact, :dev, :hosting, :success, :consulting, :privacy
 
   FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
 
