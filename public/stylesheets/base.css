@@ -57,6 +57,7 @@ a img {
 
 img.float {
     float: right;
+    margin: 16px;
 }
 
 #shell {
