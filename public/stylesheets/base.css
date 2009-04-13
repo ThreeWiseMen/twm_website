@@ -90,6 +90,7 @@ img.float {
 }
 
 #tech_logos {
+    display: none;
     width: 140px;
     height: 44px;
     margin: 8px auto 0px auto;

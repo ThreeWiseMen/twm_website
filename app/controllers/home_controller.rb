@@ -3,12 +3,15 @@ class HomeController < ApplicationController
   require 'uri'
  # require 'hpricot'
 
+  layout "layouts/content"
+
   caches_page :contact, :dev, :hosting, :success, :consulting, :privacy
 
   FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
 
   def index
     @blog_item = get_feed.entries.first
+    render :layout => "layouts/home"
   end
 
   def blogentry

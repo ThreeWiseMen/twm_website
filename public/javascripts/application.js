@@ -13,8 +13,7 @@ function page_init() {
     }
 
     if ($("#tech_logos").length > 0) {
-        //$("#tech_logos").css('display', '');
-        $("#tech_logos").css('visibility', '');
+        $("#tech_logos").css('display', 'block');
         $("#tech_logos").cycle();
     }
 
