@@ -51,6 +51,10 @@ a.linkmarker {
     padding: 0px 0px 5px 22px;
 }
 
+a img {
+    border: 0;
+}
+
 img.float {
     float: right;
 }
