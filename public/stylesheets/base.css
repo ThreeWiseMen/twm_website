@@ -50,6 +50,10 @@ a.linkmarker {
     padding: 0px 0px 5px 22px;
 }
 
+img.float {
+    float: right;
+}
+
 #shell {
     margin: 3px auto;
     width: 960px;

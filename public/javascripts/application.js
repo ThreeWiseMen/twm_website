@@ -3,15 +3,19 @@
 
 function page_init() {
 
-    $("#shell").corner("13px");
-    $("#shell .banner").corner("13px tl tr");
-		// where is the mainpage panel rounding???? 
-		$(".contentpaneldark").corner("11px bl br");
-		
-		document.getElementById("tech_logos").style.display='';
-		document.getElementById("tech_logos").style.visibility='';
-		
-    $("#tech_logos").cycle();
+    if ($("#shell").length > 0) {
+        $("#shell").corner("13px");
+        if ($(".banner").length > 0)
+            $("#shell .banner").corner("13px tl tr");
+
+        if ($(".contentpaneldark").length > 0)
+            $("#shell .contentpaneldark").corner("11px bl br");
+    }
+
+    if ($("#tech_logos").length > 0) {
+        $("#tech_logos").css('display', 'none');
+        $("#tech_logos").cycle();
+    }
 
 }
 
