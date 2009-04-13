@@ -68,7 +68,7 @@ img.float {
     color: #333;
 }
 
-#copyright a:link {
+#copyright a:link,a:visited {
     color: #111;
 }
 
