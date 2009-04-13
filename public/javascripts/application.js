@@ -17,5 +17,13 @@ function page_init() {
         $("#tech_logos").cycle();
     }
 
+    $('A[rel="external"]').click( function() {
+        var w = window.open( $(this).attr('href') );
+        if (w) {
+            if (w.focus) w.focus();
+            return false;
+        }
+        w = null;
+        return true;
+    });
 }
-
