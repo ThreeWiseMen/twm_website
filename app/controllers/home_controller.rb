@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
- # require 'rubygems'
   require 'atom'
   require 'uri'
-#  require 'hpricot'
+ # require 'hpricot'
 
   caches_page :contact, :dev, :hosting, :success, :consulting, :privacy
 
