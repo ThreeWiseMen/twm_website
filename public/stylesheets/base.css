@@ -68,6 +68,10 @@ img.float {
     color: #333;
 }
 
+#copyright a:link {
+    color: #111;
+}
+
 #shell .banner {
     position: relative;
     background: #006f44 url(/images/banner-background.png) no-repeat scroll top left;
