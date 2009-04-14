@@ -121,7 +121,7 @@
     fx: { opacity: 'toggle', duration: 'fast' },
     cookie: { expires: 1, name: "twm_tab_dev" }
   });
-<% if params[:id] %>
+<% if params[:id] -%>
   $tabs.tabs('select', <%= dev_tab_index(params[:id]) %>);
-<% end %>
+<% end -%>
 </script>
