@@ -1,53 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-   <url>
-      <loc>http://threewisemen.ca/</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.8</priority>
-   </url>
+	<!-- Main Pages -->
 
-   <url>
-      <loc>http://threewisemen.ca/home/development</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>daily</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
 
-   <url>
-      <loc>http://threewisemen.ca/home/consulting</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>daily</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/home/development</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
 
-   <url>
-      <loc>http://threewisemen.ca/home/hosting</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>daily</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/home/consulting</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
 
-   <url>
-      <loc>http://threewisemen.ca/home/success</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>monthly</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/home/hosting</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
 
-   <url>
-      <loc>http://threewisemen.ca/home/contact</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>monthly</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/home/success</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
 
-   <url>
-      <loc>http://threewisemen.ca/home/privacy</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>monthly</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/home/contact</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
 
-   <url>
-      <loc>http://threewisemen.ca/egg</loc>
-      <lastmod>2009-04-14</lastmod>
-      <changefreq>never</changefreq>
-   </url>
+	<url>
+		<loc>http://threewisemen.ca/home/privacy</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+
+	<!-- Blog Entries -->
+
+	<url>
+		<loc>http://threewisemen.ca/home/blogentry/116</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>never</changefreq>
+	</url>
+
+	<url>
+		<loc>http://threewisemen.ca/home/blogentry/101</loc>
+		<lastmod>2009-04-14</lastmod>
+		<changefreq>never</changefreq>
+	</url>
+
+	<!-- Crazy Antics -->
+
+	<url>
+	<loc>http://threewisemen.ca/egg</loc>
+	<lastmod>2009-04-14</lastmod>
+	<changefreq>never</changefreq>
+	</url>
 
 </urlset>
