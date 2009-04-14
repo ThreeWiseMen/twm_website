@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   layout "layouts/content"
 
-  caches_page :contact, :dev, :hosting, :success, :consulting, :privacy
+  caches_page :contact, :development, :hosting, :success, :consulting, :privacy
 
   FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
 
