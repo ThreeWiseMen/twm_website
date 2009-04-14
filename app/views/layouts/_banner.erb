@@ -1,0 +1,41 @@
+        <div class="banner">
+            <div class="banner_right">
+                <div id="tech_logos">
+                    <img src="/images/tech_logos/rails.png" alt="Ruby on Rails"/>
+                    <img src="/images/tech_logos/java.png" alt="Java"/>
+                    <img src="/images/tech_logos/hibernate.png" alt="Hibernate"/>
+                    <img src="/images/tech_logos/seam.png" alt="Seam"/>
+                    <img src="/images/tech_logos/postgresql.png" alt="PostgreSQL"/>
+                    <img src="/images/tech_logos/jboss.png" alt="JBoss"/>
+                    <img src="/images/tech_logos/glassfish.png" alt="GlassFish"/>
+                </div>
+            </div>
+            <div class="contact_info">
+                Toronto:<br />
+                <strong>416-848-0709</strong><br />
+                <div style="height: 4pt"></div>
+                Oshawa:<br />
+                <strong>905-436-2319</strong>
+            </div>
+            <div class="left_quote"></div>
+            <div class="right_quote"></div>
+            <div class="quote">
+                <div class="blockquote">
+                    ...Three Wise Men provides Lakeridge Health with analysis,
+                    recommendations and execution of web initiatives that are on-time and within budget.
+                    We continue to be impressed with their professional approach to our needs and results
+                    that exceed our expectations. It’s great having them on our team...
+                </div>
+                <div class="credit">
+                    Lakeridge Health Corp.
+                </div>
+            </div>
+        </div>
+        <ul id="mainmenu">
+            <li class="<%= sense_page("home", "index") %>"><%= link_to "Home", :controller => "home", :action => "index"  %></li>
+            <li class="<%= sense_page("home", "development") %>"><%= link_to "Application Development", :controller => "home", :action => "development" %></li>
+            <li class="<%= sense_page("home", "consulting") %>"><%= link_to "Consulting", :controller => "home", :action => "consulting" %></li>
+            <li class="<%= sense_page("home", "hosting") %>"><%= link_to "Application Hosting", :controller => "home", :action => "hosting" %></li>
+            <li class="<%= sense_page("home", "success") %>"><%= link_to "Success Stories", :controller => "home", :action => "success" %></li>
+            <li class="<%= sense_page("home", "contact") %>"><%= link_to "Contact Us", :controller => "home", :action => "contact" %></li>
+        </ul>
