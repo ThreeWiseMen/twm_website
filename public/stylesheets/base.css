@@ -14,17 +14,20 @@ body {
 }
 
 h1 {
+	font-family: Georgia, "Times Roman", serif;
     position: relative;
     font-size: 14pt;
     color: #2a5e8b;
 }
 
 h2 {
+	font-family: Georgia, "Times Roman", serif;
     font-size: 12pt;
     color: #2a5e8b;
 }
 
 h3 {
+	font-family: Georgia, "Times Roman", serif;
     font-size: 10pt;
     color: #2a5e8b;
 }

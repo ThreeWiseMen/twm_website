@@ -1,6 +1,7 @@
 development:
   adapter: postgresql
   database: twm_dev
+  host: 127.0.0.1
   username: twm
 
 # Warning: The database defined as "test" will be erased and
@@ -9,6 +10,7 @@ development:
 test:
   adapter: postgresql
   database: twm_test
+  host: 127.0.0.1
   username: twm
 
 production:
