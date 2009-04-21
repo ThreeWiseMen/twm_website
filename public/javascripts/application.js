@@ -20,7 +20,7 @@ function page_init() {
     if ($("#quotes").length > 0) {
         $("#quotes").css('display', 'block');
         $("#quotes").cycle({
-            timeout:  10000,
+            timeout:  15000,
         });
     }
 
