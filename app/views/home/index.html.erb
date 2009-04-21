@@ -3,11 +3,19 @@
 <% content_for :keywords do %>java, ruby on rails, ruby, xml, xsl, xsl:fo, xslt, content management, content transformation, content publishing, multi-tenant content management<% end %>
 
 <div class="mainpanel">
-    <h1><%= @blog_item.title %></h1>
-    <p>
-        <%= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
-    </p>
-    <p><%= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %></p>
+  <p>
+    Make your deadlines. Keep your budgets. In today’s world of reduced resources and increased
+    expectations, call on us to cut through the seemingly endless minutia that can suffocate a
+    project.
+  </p>
+  <p>
+    Having practiced lean and agile methods in software application development since 2002, we
+    don’t spend your budget on meaningless window dressing.  We identify concise targets and
+    reduce the minutia to a development plan.
+  </p>
+  <p>
+    <em>Backed by extensive testing our projects are delivered operational, on time and within budget.</em>
+  </p>
 </div>
 <div class="service1">
     <%= link_to image_tag("/images/development.png"), :action => "development" %>
@@ -35,3 +43,15 @@
     <p class="more"><%= link_to "read more...", { :action => "hosting" }, :class => "linkmarker" %></p>
 </div>
 <div class="bottom"></div>
+
+<div id="blog">
+  <h1><span style="color: #aaa">Latest article from our CEO:</span> <%= @blog_item.title %></h1>
+  <p>
+      <%= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
+      <%= link_to "[read article]", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) } %>
+  </p>
+</div>
+
+<script type="text/javascript">
+  $("#blog").corner("11px");
+</script>
