@@ -4,17 +4,17 @@
 
 <div class="mainpanel">
   <p>
-    Make your deadlines. Keep your budgets. In today’s world of reduced resources and increased
-    expectations, call on us to cut through the seemingly endless minutia that can suffocate a
-    project.
+    We help organizations make deadlines and keep budgets. In today’s world of reduced resources
+    and increased expectations, Stakeholders and IT professionals alike call on us to cut through
+    the seemingly endless minutia that can suffocate a project.
   </p>
   <p>
-    Having practiced lean and agile methods in software application development since 2002, we
-    don’t spend your budget on meaningless window dressing.  We identify concise targets and
-    reduce the minutia to a development plan.
+    Practitioners of agile and lean software application development, we don’t spend your budget
+    on meaningless window dressing. We identify clear and concise targets for your project then
+    develop it.
   </p>
   <p>
-    <em>Backed by extensive testing our projects are delivered operational, on time and within budget.</em>
+    <em>Backed by extensive testing projects are operational on time and within budget.</em>
   </p>
 </div>
 <div class="service1">
@@ -48,7 +48,7 @@
   <h1><span style="color: #aaa">Latest article from our CEO:</span> <%= @blog_item.title %></h1>
   <p>
       <%= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
-      <%= link_to "[read article]", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) } %>
+      <%= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %>
   </p>
 </div>
 
