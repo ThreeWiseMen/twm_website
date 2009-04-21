@@ -17,6 +17,13 @@ function page_init() {
         $("#tech_logos").cycle();
     }
 
+    if ($("#quotes").length > 0) {
+        $("#quotes").css('display', 'block');
+        $("#quotes").cycle({
+            timeout:  10000,
+        });
+    }
+
     if ($("#phone_dialog").length > 0) {
 		$("#phone_dialog").dialog({
             title: "Give us a call!",
