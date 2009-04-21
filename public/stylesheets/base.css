@@ -157,6 +157,30 @@ img.float {
     color: black;
 }
 
+#shell .banner .logins {
+	top: 67px;
+	left: 250px;
+	width: 698px;
+	position: absolute;
+}
+
+#shell .banner .logins ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#shell .banner .logins ul li {
+	display: inline;
+}
+
+#shell .banner .logins ul li a {
+	display: block;
+	float: right;
+	font-size: 11px;
+	color: #87b4d5;
+}
+
 ul#mainmenu {
     clear: both;
     position: relative;
