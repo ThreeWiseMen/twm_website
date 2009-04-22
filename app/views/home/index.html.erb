@@ -45,7 +45,7 @@
 <div class="bottom"></div>
 
 <div id="blog">
-  <h1><span style="color: #aaa">Latest article from our CEO:</span> <%= @blog_item.title %></h1>
+  <h1><span style="color: #aaa">Latest blog from our CEO:</span> <%= @blog_item.title %></h1>
   <p>
       <%= @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...") %>
       <%= link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker" %>

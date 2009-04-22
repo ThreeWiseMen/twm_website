@@ -138,6 +138,7 @@ img.float {
 }
 
 #quotes {
+    display: none;
     font-family: Georgia, "Times New Roman", "Times Roman", serif;
     font-size: 9pt;
     width: 450px;
