@@ -7,7 +7,8 @@ class HomeController < ApplicationController
 
   caches_page :contact, :development, :hosting, :success, :consulting, :privacy
 
-  FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
+#  FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
+  FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
   def index
     @blog_item = get_feed.entries.first
