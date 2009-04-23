@@ -20,10 +20,11 @@ function page_init() {
     if ($("#quotes").length > 0) {
         $("#quotes").css('display', 'block');
         $("#quotes").cycle({
-            timeout:  15000,
+            timeout:  15000
         });
     }
 
+/*
     if ($("#phone_dialog").length > 0) {
 		$("#phone_dialog").dialog({
             title: "Give us a call!",
@@ -41,6 +42,7 @@ function page_init() {
 			}
 		});
     }
+*/
 
     $('A[rel="external"]').click( function() {
         var w = window.open( $(this).attr('href') );

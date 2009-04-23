@@ -145,6 +145,7 @@ img.float {
     position: relative;
     top: -18px;
     left: 432px;
+    background-color: #a4e1d1;
 }
 
 #shell .banner .quote .blockquote {
@@ -225,7 +226,7 @@ ul#mainmenu a:link, ul#mainmenu a:visited, ul#mainmenu a:active {
 ul#mainmenu li a:hover {
     height: 37px;
     padding-top: 19px;
-	background: transparent url(/images/nav/menu-hover.png) no-repeat center top;
+	background: transparent url(/images/nav/menu-hover-trans.png) no-repeat center top;
 	color:#fff;
 }
 
@@ -401,7 +402,7 @@ ul#submenu li a:hover {
     clear: both;
     width: 960px;
     height: 30px;
-    background-image: url(/images/home-bodybottom.png);
+    background-image: url(/images/home-bodybottom-trans.png);
 }
 
 #blog {
