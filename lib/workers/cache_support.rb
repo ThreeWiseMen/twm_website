@@ -6,6 +6,12 @@ class CacheSupport < BackgrounDRb::MetaWorker
 
   def clear_page_caches
     logger.info "Clearing page caches"
-    Rails.cache.delete "/home/development"
+    ActionController::Base.expire_page "/"
+    ActionController::Base.expire_page "/home/development"
+    ActionController::Base.expire_page "/home/consulting"
+    ActionController::Base.expire_page "/home/hosting"
+    ActionController::Base.expire_page "/home/success"
+    ActionController::Base.expire_page "/home/contact"
+    ActionController::Base.expire_page "/home/privacy"
   end
 end
