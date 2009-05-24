@@ -21,3 +21,25 @@ task :production do
 	role :web, "74.205.99.188"
 	role :db,  "74.205.99.188", :primary => true
 end
+
+desc "Stop the backgroundrb server"
+task :stop_backgroundrb , :roles => :app do
+  run "cd #{current_path} && ./script/backgroundrb/stop"
+end
+
+desc "Start the backgroundrb server"
+task :start_backgroundrb , :roles => :app do
+  run "cd #{current_path} && RAILS_ENV=production ./script/backgroundrb/start > /dev/null 2>&1"
+end
+
+desc "Start the backgroundrb server"
+task :restart_backgroundrb, :roles => :app do
+  stop_backgroundrb
+  start_backgroundrb
+end
+
+task :restart, :roles => :app do
+  stop_mongrel_cluster
+  restart_backgroundrb
+  start_mongrel_cluster
+end
