@@ -2,7 +2,6 @@ class HomeController < ApplicationController
   require 'atom'
   require 'uri'
   require 'CMSBinding'
- # require 'hpricot'
 
   layout "layouts/content"
 
@@ -11,7 +10,8 @@ class HomeController < ApplicationController
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
   def initialize
-    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W'})
+    @cache = MemCache.new("127.0.0.1")
+    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W', :cache => @cache})
   end
 
   def index
@@ -35,7 +35,12 @@ class HomeController < ApplicationController
   private
 
   def get_feed
-    Atom::Feed.load_feed(URI.parse(FEED_URL))
+    data = @cache["blog"]
+    if data.nil?
+      data = Atom::Feed.load_feed(URI.parse(FEED_URL))
+      @cache.set("blog", data, 3600)
+    end
+    data
   end
 
 end
