@@ -2,166 +2,51 @@
 <% content_for :description do %>Application hosting focuses on ensuring a functional application rather than just server uptime. Video hosting automated by our specialized tooling and distributed by Amazon Cloud.<% end %>
 <% content_for :keywords do %>application hosting, java hosting, ruby hosting, rails hosting, ruby on rails hosting, video hosting<% end %>
 
-<h1><img src="/images/apphosting-trans.png" alt="Hosting Logo" />Application Hosting Plans</h1>
-<p class="inset">
-  When you need your <em>application</em> online and not just the server it sits on.
-</p>
-<p class="inset">
-  All of our plans include:
-</p>
-<ul class="inset">
-  <li>100% uptime guarantee for approved applications (less scheduled downtime)</li>
-  <li>Application monitoring and automated notifications</li>
-  <li>Response time guarantee</li>
-</ul>
+<h1><img src="/images/apphosting-trans.png" alt="Hosting Logo" /><%= @intro.headline %></h1>
+<%= @intro.contents  %>
 
 <div id="hostingplans" class="ui-tabs-hide">
   <ul>
-    <li><a href="#video">Video</a></li>
-    <li><a href="#shared1">Shared 1</a></li>
-    <li><a href="#shared2">Shared 2</a></li>
-    <li><a href="#shared3">Shared 3</a></li>
-    <li><a href="#ded1">Dedicated 1</a></li>
-    <li><a href="#ded2">Dedicated 2</a></li>
-    <li><a href="#custom">Custom</a></li>
-    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#video"><%= @video.headline %></a></li>
+    <li><a href="#shared1"><%= @shared1.headline %></a></li>
+    <li><a href="#shared2"><%= @shared2.headline %></a></li>
+    <li><a href="#shared3"><%= @shared3.headline %></a></li>
+    <li><a href="#ded1"><%= @dedicated1.headline %></a></li>
+    <li><a href="#ded2"><%= @dedicated2.headline %></a></li>
+    <li><a href="#custom"><%= @custom.headline %></a></li>
+    <li><a href="#pricing"><%= @pricing.headline %></a></li>
   </ul>
 
   <div id="video" class="plan">
-    <h2>Video Hosting</h2>
-    <p>
-      Video hosting used to be a tricky animal. The bandwidth it can take up can cripple any single
-      data-center and drive you broke at the same time.
-    </p>
-    <p>
-      Our services leverage the Amazon Cloud CDN for content distribution, and provide you a simple
-      interface that gets your content online simply and with economies of scale that simply couldn't
-      have been reached in the past.
-    </p>
-    <p>
-      Pricing is gauged on the following parameters, call us today for a quote:
-    </p>
-    <ul>
-      <li>Initial archive size (in hours)</li>
-      <li>Archive build rate (in hours per month)</li>
-      <li>Number of months content retention</li>
-      <li>Anticipated average daily viewers</li>
-      <li>Anticipated average video played by each viewer (in minutes)</li>
-    </ul>
+    <%= @video.contents %>
   </div>
 
   <div id="shared1" class="plan">
-    <h2>Shared Application Hosting 1</h2>
-    <p>Designed for applications where cost is a concern, and that service less than 10,000 user sessions per month.</p>
-    <h3>Technical Details</h3>
-    <ul>
-      <li>Application Server
-        <ul>
-          <li>2 Mongrel instances (Rails)</li>
-          <li>Tomcat instance (Java)</li>
-        </ul></li>
-      <li>Apache balancer / accelerator</li>
-      <li>MySQL or PostgreSQL database</li>
-    </ul>
+    <%= @shared1.contents %>
   </div>
 
   <div id="shared2" class="plan">
-    <h2>Shared Application Hosting 2</h2>
-    <p>Designed for applications that require more CPU horsepower to do their job, and that service less than 100,000 user sessions per month.</p>
-    <h3>Technical Details</h3>
-    <ul>
-      <li>Application Server
-        <ul>
-          <li>4 Mongrel instances across two servers (Rails)</li>
-          <li>JBoss or Glassfish instance (Java)</li>
-        </ul></li>
-      <li>Apache balancer</li>
-      <li>Squid accelerator (optional)</li>
-      <li>MySQL or PostgreSQL database</li>
-    </ul>
+    <%= @shared2.contents %>
   </div>
 
   <div id="shared3" class="plan">
-    <h2>Shared Application Hosting 3</h2>
-    <p>Designed for business critical applications that require some CPU horsepower and high availability and service less than 300,000 user sessions per month.</p>
-    <h3>Technical Details</h3>
-    <ul>
-      <li>Application Server
-        <ul>
-          <li>12 Mongrel instances across two servers (Rails)</li>
-          <li>Two JBoss or Glassfish instances across two servers (Java)</li>
-        </ul></li>
-      <li>Apache balancer</li>
-      <li>Squid accelerator (optional)</li>
-      <li>MySQL or PostgreSQL database</li>
-    </ul>
+    <%= @shared3.contents %>
   </div>
 
   <div id="ded1" class="plan">
-    <h2>Dedicated Application Hosting 1</h2>
-    <p>Designed for business sensitive applications that cannot be co-located with other applications on the same hardware due to strict privacy concerns, that require a specific server configuration, or require isolation for a private network connection to a corporate network.</p>
-    <h3>Technical Details</h3>
-    <ul>
-      <li>Application Server
-        <ul>
-          <li>Dedicated server hardware
-          <ul>
-            <li>System optimized Mongrel instances (Rails)</li>
-            <li>JBoss or Glassfish instance (Java)</li>
-          </ul></li>
-        </ul></li>
-      <li>Apache balancer (separate device)</li>
-      <li>Squid accelerator (optional, separate device)</li>
-      <li>Choice of Windows or Linux operating system</li>
-      <li>Oracle, MySQL or PostgreSQL database on Linux or Windows</li>
-      <li>MS SQL Express or Standard database on Windows (MS SQL Standard licensing priced separately)</li>
-    </ul>
+    <%= @dedicated1.contents %>
   </div>
 
   <div id="ded2" class="plan">
-    <h2>Dedicated Application Hosting 2</h2>
-    <p>Designed for business critical and business sensitive applications that cannot be co-located with other applications and where the up-time of the application is critical. Two dedicated servers provide hot-failover and high performance.</p>
-    <h3>Technical Details</h3>
-    <ul>
-      <li>Application Server
-        <ul>
-          <li>Two dedicated servers
-          <ul>
-            <li>System optimized Mongrel instances (Rails)</li>
-            <li>JBoss or Glassfish instances on each (Java)</li>
-          </ul></li>
-        </ul></li>
-      <li>Apache balancer (separate device)</li>
-      <li>Squid accelerator (optional, separate device)</li>
-      <li>Choice of Windows or Linux operating system</li>
-      <li>Oracle, MySQL or PostgreSQL database on Linux or Windows</li>
-      <li>MS SQL Express or Standard database on Windows (MS SQL Standard licensing priced separately)</li>
-    </ul>
+    <%= @dedicated2.contents %>
   </div>
 
   <div id="custom" class="plan">
-    <h2>Custom Application Hosting</h2>
-    <p>For complex customer requirements, a custom crafted environment can be designed by our experts to meet just about any demands. Multiple physical data-centers with geo-sensitive load balancing, segmented network traffic, custom router, firewall and inter-network linkage requirements. We will work with you to find the optimal configuration for your budget and requirements.</p>
+    <%= @custom.contents %>
   </div>
 
   <div id="pricing" class="plan">
-    <p>
-      Hosting plans are priced monthly or annually. Video hosting is variable based on traffic,
-      please call for a quote.
-    </p>
-    <ul>
-      <li>Video Hosting - Please call!</li>
-      <li>Shared Application Hosting 1 - from<super>*</super> $120 / month or $1,200 / year</li>
-      <li>Shared Application Hosting 2 - from<super>*</super> $360 / month or $3,600 / year</li>
-      <li>Shared Application Hosting 3 - from<super>*</super> $720 / month or $7,200 / year</li>
-      <li>Dedicated Application Hosting 1 - from<super>*</super> $1,200 / month or $12,000 / year</li>
-      <li>Dedicated Application Hosting 2 - from<super>*</super> $1,800 / month or $18,000 / year</li>
-      <li>Custom Application Hosting - Please call!</li>
-    </ul>
-    <p>
-      <super>*</super>Plans include a certain amount of storage and throughput, if you require more storage or throughput
-      additional charges will apply.
-    </p>
+    <%= @pricing.contents %>
   </div>
 
 </div>

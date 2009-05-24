@@ -16,9 +16,39 @@ class HomeController < ApplicationController
 
   def index
     @blog_item = get_feed.entries.first
-    queue = @cms.queue 'home', 'historyqueue'
-    @article = queue.articles.first
+    @article = get_single_content("home")
     render :layout => "layouts/home"
+  end
+
+  def development
+    @intro = get_single_content("appdev_intro")
+    @java = get_single_content("appdev_java")
+    @rails = get_single_content("appdev_rails")
+    @dotnet = get_single_content("appdev_dotnet")
+    @database = get_single_content("appdev_database")
+    @expect = get_single_content("appdev_expect")
+    @budgeting = get_single_content("appdev_budgeting")
+  end
+
+  def consulting
+    @intro = get_single_content("consulting_intro")
+    @performance = get_single_content("consulting_performance")
+    @integration = get_single_content("consulting_integration")
+    @communication = get_single_content("consulting_communication")
+    @development = get_single_content("consulting_development")
+    @testing = get_single_content("consulting_testing")
+  end
+
+  def hosting
+    @intro = get_single_content("hosting_intro")
+    @video = get_single_content("hosting_video")
+    @shared1 = get_single_content("hosting_shared1")
+    @shared2 = get_single_content("hosting_shared2")
+    @shared3 = get_single_content("hosting_shared3")
+    @dedicated1 = get_single_content("hosting_dedicated1")
+    @dedicated2 = get_single_content("hosting_dedicated2")
+    @custom = get_single_content("hosting_custom")
+    @pricing = get_single_content("hosting_pricing")
   end
 
   def blogentry
@@ -41,6 +71,11 @@ class HomeController < ApplicationController
       @cache.set("blog", data, 3600)
     end
     data
+  end
+
+  def get_single_content category_name
+    queue = @cms.queue category_name, 'historyqueue'
+    queue.articles.first
   end
 
 end

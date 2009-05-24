@@ -2,135 +2,50 @@
 <% content_for :description do %>Software development services utilizing the most prominent technologies such as Java, Ruby On Rails, Microsoft .NET<% end %>
 <% content_for :keywords do %>java, hibernate, seam, jboss, glassfish, apache, fop, batik, jackrabbit, lucene, rails, ruby, ruby on rails, dotnet, .net, oracle, microsoft sql server, oracle, postgresql, mysql<% end %>
 
-<h1><img src="/images/development-trans.png" alt="Development Logo" />Application Development Services</h1>
+<h1><img src="/images/development-trans.png" alt="Development Logo" /><%= @intro.headline %></h1>
 
-<p class="inset">
-  Outsource those nagging projects to a
-  <%= link_to "local, cost-effective team", { :action => "blogentry", :id => 101 } %>
-  that can get them off your plate and off your
-  mind, letting you focus on those things that only you can do.
-  Not only can we help in getting some of that work done, we can
-  <%= link_to "show you a better way to work", { :action => "blogentry", :id => 116 } %>
-  with external development teams.
-</p>
+<div class="inset"><%= @intro.contents %></div>
 
 <div id="technologies">
   <ul>
-    <li><a href="#java">Java</a></li>
-    <li><a href="#rails">Rails</a></li>
-    <li><a href="#dotnet">.NET</a></li>
-    <li><a href="#database">Database Design</a></li>
-    <li><a href="#expectations">What to Expect</a></li>
-    <li><a href="#pricing">Budgeting</a></li>
+    <li><a href="#java"><%= @java.headline %></a></li>
+    <li><a href="#rails"><%= @rails.headline %></a></li>
+    <li><a href="#dotnet"><%= @dotnet.headline %></a></li>
+    <li><a href="#database"><%= @database.headline %></a></li>
+    <li><a href="#expectations"><%= @expect.headline %></a></li>
+    <li><a href="#pricing"><%= @budgeting.headline %></a></li>
   </ul>
 
   <div id="java" class="tech">
     <img src="/images/tech_logos/java-64x128.png" alt="Java"/>
-    <h2>Java Standard and Enterprise</h2>
-    <ul>
-      <li>Tremendous reach to Windows, Mac and Linux desktops with easy deployment.</li>
-      <li>Efficient for assembly of line-of-business form and data driven applications.</li>
-      <li>Powerful and compatible server-side processing abilities.</li>
-    </ul>
-
-    <h3>Recent Customer Work</h3>
-    <p>It's hard for us to come up with a lot of these, most of our projects are internal or private applications that the public can't see. Here's a couple, though:</p>
-    <ul>
-      <li><a rel="external" href="http://groceries.demo.threewisemen.ca">Online grocery shopping (JBoss AS, Seam, Hibernate)</a></li>
-      <li><a rel="external" href="http://easybrandingtools.com">One-stop brand creation for startups (Multi-tenant content transformation and publishing engine, JBoss AS, JCR)</a></li>
-    </ul>
+    <%= @java.contents %>
     <div style="clear: both"></div>
   </div>
 
   <div id="rails" class="tech">
     <img src="/images/tech_logos/rails-100x128.png" alt="Rails"/>
-    <h2>Ruby On Rails</h2>
-    <ul>
-      <li>The most powerful and agile development framework gets your web initiatives online faster.</li>
-    </ul>
-    <h3>Recent Customer Work</h3>
-    <p>It's hard for us to come up with a lot of these, most of our projects are internal or private applications that the public can't see. Here's a couple, though:</p>
-    <ul>
-      <li><a rel="external" href="http://easybrandingtools.com">One-stop brand creation for startups (Rails front-end, External APIs from Elavon Canada, OpenSRS)</a></li>
-    </ul>
+    <%= @rails.contents %>
     <div style="clear: both"></div>
   </div>
 
   <div id="dotnet" class="tech">
     <img src="/images/tech_logos/dotnet-117x111.png" alt=".NET"/>
-    <h2>Microsoft .NET</h2>
-    <ul>
-      <li>Leverage powerful desktop 3D and media capabilities on Windows desktops.</li>
-      <li>Efficient for assemby of line-of-business form and data driven applications.</li>
-    </ul>
-    <h3>Recent Customer Work</h3>
-    <ul>
-      <li>User-interface for identity management web-services</li>
-      <li>Resume collection and management tool for HR</li>
-      <li>ERP application for the Natural Resources industry</li>
-    </ul>
+    <%= @dotnet.contents %>
     <div style="clear: both"></div>
   </div>
 
   <div id="database" class="tech">
     <img src="/images/tech_logos/postgresql-95x51.png" alt="PostgreSQL"/>
-    <h2>Database Design</h2>
-    <ul>
-      <li>Are your programmers designing your database?</li>
-      <li>Bring our experience to bear on your overall data architecture</li>
-      <li>Theory is great, but practical experience shows where and when to apply it</li>
-      <li>We can tune your database for transactional use, reporting, or a compromise of the two</li>
-      <li>Database refactoring is an often overlooked possibility to ease overloaded servers</li>
-      <li>Understanding how relational data is best mapped to an object-oriented data model for best application performance</li>
-      <li>We are familiar with the quirks and capabilities of Oracle, MS SQL Server, PostgreSQL and MySQL</li>
-    </ul>
-    <h3>Recent Customer Work</h3>
-    <ul>
-      <li>Performance optimized data collection and logging with reporting and rollups</li>
-      <li>Balanced schema creation to meet a specific goal (size, transactional performance, data-mining performance)</li>
-      <li>Analyzing a poorly performing database schema, then providing and implementing a phased improvement plan</li>
-    </ul>
+    <%= @database.contents %>
     <div style="clear: both"></div>
   </div>
 
   <div id="expectations" class="tech">
-    
+    <%= @expect.contents %>
   </div>
 
   <div id="pricing" class="tech">
-    <h2>Budgeting for Your Project</h2>
-    <p>
-      Our development teams work in <em>sprints</em>, which wraps up planning, development,
-      testing, and packaging in a short one or two week interval. This provides predictable
-      costs, regular releases, and regular incremental improvement of your application.
-      <em>Call us today for pricing!</em>
-    </p>
-    <p>
-      Projects are estimated in the number of sprints they may take to complete allowing you to work to
-      a target budget without overruns. Our agile processes ensure that your most critical features
-      are built first and for the money you spend, you are getting the best possible software for your
-      business.
-    </p>
-    <h3>Software Development Plan</h3>
-    <p>
-      Capture and document the overall reasoning behind why you are building your application. It
-      helps keep you and the team focused on your <em>business goals</em> rather than getting lost in
-      the technology or implementation of the moment. This is very highly recommended if your project
-      is estimated to require more than 2-3 iterations.
-    </p>
-    <h3>Express Development Sprint</h3>
-    <p>
-      A single resource from a stable team allocated for a one-week period. More than one developer may be involved
-      on different days, depending on specific technical requirements at certain times. However
-      your assigned team will generally be the same people for the duration of your project. Excellent
-      for small to mid-size projects budgeting $5K or more.
-    </p>
-    <h3>Enterprise Development Sprint</h3>
-    <p>
-      Three stable resources allocated for a two-week period. Your assigned team will generally be with you
-      for the entire duration of your project. Excellent for larger scale projects
-      budgeting $100K or more.
-    </p>
+    <%= @budgeting.contents %>
   </div>
 
 </div>

@@ -2,92 +2,36 @@
 <% content_for :description do %>We have helped many companies overcome what appeared to be significant barriers at the time.<% end %>
 <% content_for :keywords do %>performance tuning, performance optimized, systems integration, team communications, software development processes, testing, automated testing, integration testing, unit testing<% end %>
 
-<h1><img src="/images/consulting-trans.png" alt="Consulting Logo" />Consulting</h1>
-<p class="inset">
-  The key to our consulting success is our people. We don't get lost in lofty pie-in-the-sky,
-  rediculous architecture diagrams, reams of UML, big slushy processes. We focus on the
-  simplest, pragmatic solution to each problem at hand.
-</p>
-<p class="inset">
-  Our people are <em>involved</em>. In your project, in the global open-source communities in which they
-  specialize, in life. You can't find new and innovative solutions to anything living in a bubble.
-</p>
+<h1><img src="/images/consulting-trans.png" alt="Consulting Logo" /><%= @intro.headline %></h1>
+<div class="inset"><%= @intro.contents %></div>
+
 <div id="consultingrealms">
   <ul>
-    <li><a href="#perf">Performance</a></li>
-    <li><a href="#glue">Integration</a></li>
-    <li><a href="#team">Communication</a></li>
-    <li><a href="#processes">Development</a></li>
-    <li><a href="#testing">Automated Testing</a></li>
+    <li><a href="#perf"><%= @performance.headline %></a></li>
+    <li><a href="#glue"><%= @integration.headline %></a></li>
+    <li><a href="#team"><%= @communication.headline %></a></li>
+    <li><a href="#processes"><%= @development.headline %></a></li>
+    <li><a href="#testing"><%= @testing.headline %></a></li>
   </ul>
 
   <div id="perf" class="realm">
-    <h2>Perfomance Analysis and Tuning</h2>
-    <p>
-      Do you have a web application or system that isn't performing the way you'd like or need? You've
-      tried what you thought were obvious optimizations but can't seem to find what's causing it?
-    </p>
-    <p>
-      We've taken 60 second page load times and turned them into 3 second load times, sometimes without
-      even touching the application code.
-    </p>
-    <p>
-      <em>It's possible we can help, but you won't know until you call us!</em> There is no obligation and the
-      initial consultation is free of charge.
-    </p>
+    <%= @performance.contents  %>
   </div>
 
   <div id="glue" class="realm">
-    <h2>Integration of Disparate Systems</h2>
-    <p>
-      We've tied so many different kinds of systems together we've lost count. If you find yourself
-      relying on people manually moving data around between mainframes and spreadsheets, or spending
-      time on multiple data-entry, you likely have an integration problem.
-    </p>
-    <p>
-      <em>It's possible we can help, but you won't know until you call us!</em> There is no obligation and the
-      initial consultation is free of charge.
-    </p>
+    <%= @integration.contents %>
   </div>
 
   <div id="team" class="realm">
-    <h2>Team Integration Technologies</h2>
-    <p>
-      If you're like us, you want your team working together as best as possible. Technology isn't always
-      the solution, but there is often one or more places where it can help. Remember to include <em>everyone</em>
-      who is on your team - sales, production, support, customers, suppliers, stakeholders - often your
-      team is bigger than you first think.
-    </p>
-    <p>
-      <em>It's possible we can help, but you won't know until you call us!</em> There is no obligation and the
-      initial consultation is free of charge.
-    </p>
+    <%= @communication.contents %>
   </div>
 
   <div id="processes" class="realm">
-    <h2>Development Processes</h2>
-    <p>
-      Building software is difficult, doing it well is extraordinarily difficult. We can suggest and help you
-      adopt processes that will bring it under control. We start with a simple goal like improved code quality,
-      higher developer velocity, or more regular releases and go from there.
-    </p>
-    <p>
-      <em>It's possible we can help, but you won't know until you call us!</em> There is no obligation and the
-      initial consultation is free of charge.
-    </p>
+   <%= @development.contents %>
   </div>
 
   <div id="testing" class="realm">
-    <h2>Automated Software Testing</h2>
-    <p>
-      An amazing thing happens when you have a good level of software testing. Your freedom to experiment,
-      refactor to reduce technical debt, fix bugs without always creating new bugs increases dramatically!
-      Increase software quality, project velocity, and everyone's sanity!
-    </p>
-    <p>
-      <em>It's possible we can help, but you won't know until you call us!</em> There is no obligation and the
-      initial consultation is free of charge.
-    </p>
+    <%= @testing.contents %>
   </div>
 
 </div>
