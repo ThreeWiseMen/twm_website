@@ -37,9 +37,3 @@ task :restart_backgroundrb, :roles => :app do
   stop_backgroundrb
   start_backgroundrb
 end
-
-task :restart, :roles => :app do
-  stop_mongrel_cluster
-  restart_backgroundrb
-  start_mongrel_cluster
-end

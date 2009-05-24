@@ -1,7 +1,7 @@
 class CacheSupport < BackgrounDRb::MetaWorker
   set_worker_name :cache_support
   def create(args = nil)
-    add_periodic_timer(60) { clear_page_caches }
+    add_periodic_timer(3600) { clear_page_caches }
   end
 
   def clear_page_caches
