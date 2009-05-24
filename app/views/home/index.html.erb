@@ -3,19 +3,7 @@
 <% content_for :keywords do %>java, ruby on rails, ruby, xml, xsl, xsl:fo, xslt, content management, content transformation, content publishing, multi-tenant content management<% end %>
 
 <div class="mainpanel">
-  <p>
-    We help organizations make deadlines and keep budgets. In today’s world of reduced resources
-    and increased expectations, Stakeholders and IT professionals alike call on us to cut through
-    the seemingly endless minutia that can suffocate a project.
-  </p>
-  <p>
-    Practitioners of agile and lean development, we don’t spend your budget
-    on meaningless window dressing. We identify clear and concise targets for your project then
-    develop it.
-  </p>
-  <p>
-    <em>Backed by extensive testing projects are operational on time and within budget.</em>
-  </p>
+  <%= @article.contents %>
 </div>
 <div class="service1">
     <%= link_to image_tag("/images/development-trans.png"), :action => "development" %>

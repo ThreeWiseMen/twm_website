@@ -1,17 +1,23 @@
 class HomeController < ApplicationController
   require 'atom'
   require 'uri'
+  require 'CMSBinding'
  # require 'hpricot'
 
   layout "layouts/content"
 
   caches_page :contact, :development, :hosting, :success, :consulting, :privacy
 
-#  FEED_URL = "http://svetzal.wordpress.com/category/business/feed/atom/"
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
+
+  def initialize
+    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W'})
+  end
 
   def index
     @blog_item = get_feed.entries.first
+    queue = @cms.queue 'home', 'historyqueue'
+    @article = queue.articles.first
     render :layout => "layouts/home"
   end
 

@@ -42,6 +42,11 @@ function page_init() {
 			}
 		});
     }
+    $('strong.phone').click( function () {
+        if ($("#phone_dialog").length > 0) {
+            $("#phone_dialog").dialog('open');
+        }
+    }).css('cursor', 'help');
 */
 
     $('A[rel="external"]').click( function() {
@@ -54,9 +59,4 @@ function page_init() {
         return true;
     });
 
-    $('strong.phone').click( function () {
-        if ($("#phone_dialog").length > 0) {
-            $("#phone_dialog").dialog('open');
-        }
-    }).css('cursor', 'help');
 }
