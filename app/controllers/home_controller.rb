@@ -9,46 +9,45 @@ class HomeController < ApplicationController
 
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
-  def initialize
-    @cache = MemCache.new("127.0.0.1")
-    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W', :port => '8001', :cache => @cache, :cache_timeout => 3600})
-  end
-
   def index
     @blog_item = get_feed.entries.first
-    @article = get_single_content("home")
+    @article = content("home")
+    @testimonials = testimonials
     render :layout => "layouts/home"
   end
 
   def development
-    @intro = get_single_content("appdev_intro")
-    @java = get_single_content("appdev_java")
-    @rails = get_single_content("appdev_rails")
-    @dotnet = get_single_content("appdev_dotnet")
-    @database = get_single_content("appdev_database")
-    @expect = get_single_content("appdev_expect")
-    @budgeting = get_single_content("appdev_budgeting")
+    @intro = content("appdev_intro")
+    @java = content("appdev_java")
+    @rails = content("appdev_rails")
+    @dotnet = content("appdev_dotnet")
+    @database = content("appdev_database")
+    @expect = content("appdev_expect")
+    @budgeting = content("appdev_budgeting")
+    @testimonials = testimonials
   end
 
   def consulting
-    @intro = get_single_content("consulting_intro")
-    @performance = get_single_content("consulting_performance")
-    @integration = get_single_content("consulting_integration")
-    @communication = get_single_content("consulting_communication")
-    @development = get_single_content("consulting_development")
-    @testing = get_single_content("consulting_testing")
+    @intro = content("consulting_intro")
+    @performance = content("consulting_performance")
+    @integration = content("consulting_integration")
+    @communication = content("consulting_communication")
+    @development = content("consulting_development")
+    @testing = content("consulting_testing")
+    @testimonials = testimonials
   end
 
   def hosting
-    @intro = get_single_content("hosting_intro")
-    @video = get_single_content("hosting_video")
-    @shared1 = get_single_content("hosting_shared1")
-    @shared2 = get_single_content("hosting_shared2")
-    @shared3 = get_single_content("hosting_shared3")
-    @dedicated1 = get_single_content("hosting_dedicated1")
-    @dedicated2 = get_single_content("hosting_dedicated2")
-    @custom = get_single_content("hosting_custom")
-    @pricing = get_single_content("hosting_pricing")
+    @intro = content("hosting_intro")
+    @video = content("hosting_video")
+    @shared1 = content("hosting_shared1")
+    @shared2 = content("hosting_shared2")
+    @shared3 = content("hosting_shared3")
+    @dedicated1 = content("hosting_dedicated1")
+    @dedicated2 = content("hosting_dedicated2")
+    @custom = content("hosting_custom")
+    @pricing = content("hosting_pricing")
+    @testimonials = testimonials
   end
 
   def blogentry
@@ -59,6 +58,7 @@ class HomeController < ApplicationController
         @content = entry.content
       end
     end
+    @testimonials = testimonials
     redirect_to "/404.html" if @title.nil?
   end 
 
@@ -71,15 +71,6 @@ class HomeController < ApplicationController
       @cache.set("blog", data, 3600)
     end
     data
-  end
-
-  def get_single_content category_name
-    queue = @cms.queue category_name, 'historyqueue'
-    queue.articles.first
-  end
-
-  def expire
-    expire_page(:controller => 'home', :action => 'index')
   end
 
 end

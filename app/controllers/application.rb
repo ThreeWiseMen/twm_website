@@ -12,4 +12,20 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+
+  def initialize
+    @cache = MemCache.new("127.0.0.1")
+    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W', :port => '8001', :cache => @cache, :cache_timeout => 3600})
+  end
+
+  def content category_name
+    queue = @cms.queue category_name, "historyqueue"
+    queue.articles.first
+  end
+
+  def testimonials
+    queue = @cms.queue "testimonials", "historyqueue"
+    queue.articles
+  end
+
 end

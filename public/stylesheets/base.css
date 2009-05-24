@@ -148,13 +148,17 @@ img.float {
     background-color: #a4e1d1;
 }
 
-#shell .banner .quote .blockquote {
+#quotes .quote .blockquote {
     margin: 0px;
     font-style: italic;
     color: black;
 }
 
-#shell .banner .quote .credit {
+#quotes .quote .blockquote p {
+    margin: 0; padding: 0;
+}
+
+#quotes .quote .credit {
     text-align: right;
     color: black;
 }
