@@ -24,12 +24,12 @@ end
 
 desc "Stop the backgroundrb server"
 task :stop_backgroundrb , :roles => :app do
-  run "cd #{current_path} && ./script/backgroundrb/stop"
+  run "cd #{current_path} && ./script/backgroundrb stop"
 end
 
 desc "Start the backgroundrb server"
 task :start_backgroundrb , :roles => :app do
-  run "cd #{current_path} && RAILS_ENV=production ./script/backgroundrb/start > /dev/null 2>&1"
+  run "cd #{current_path} && RAILS_ENV=production ./script/backgroundrb start > /dev/null 2>&1"
 end
 
 desc "Start the backgroundrb server"

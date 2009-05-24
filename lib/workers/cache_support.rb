@@ -6,6 +6,6 @@ class CacheSupport < BackgrounDRb::MetaWorker
 
   def clear_page_caches
     logger.info "Clearing page caches"
-    Rails.cache.delete "/home/contact"
+    Rails.cache.delete "/home/development"
   end
 end

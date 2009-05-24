@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   layout "layouts/content"
 
-  caches_page :contact, :development, :hosting, :success, :consulting, :privacy
+  caches_page :index, :contact, :development, :hosting, :success, :consulting, :privacy
 
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
