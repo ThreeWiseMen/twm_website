@@ -16,11 +16,9 @@ set :use_sudo, false
 set :mongrel_port, "3000"
 set :mongrel_address, "74.205.99.188"
 
-task :production do
-	role :app, "74.205.99.188"
-	role :web, "74.205.99.188"
-	role :db,  "74.205.99.188", :primary => true
-end
+role :app, "74.205.99.188"
+role :web, "74.205.99.188"
+role :db,  "74.205.99.188", :primary => true
 
 desc "Stop the backgroundrb server"
 task :stop_backgroundrb , :roles => :app do

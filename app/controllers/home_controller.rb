@@ -62,6 +62,14 @@ class HomeController < ApplicationController
     redirect_to "/404.html" if @title.nil?
   end 
 
+  def success
+    @testimonials = testimonials
+  end
+
+  def contact
+    @testimonials = testimonials
+  end
+
   private
 
   def get_feed
