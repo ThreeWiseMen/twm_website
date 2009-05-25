@@ -32,8 +32,10 @@ task :start_backgroundrb , :roles => :app do
   run "cd #{current_path} && RAILS_ENV=production ./script/backgroundrb start > /dev/null 2>&1"
 end
 
-desc "Start the backgroundrb server"
+desc "Restart the backgroundrb server"
 task :restart_backgroundrb, :roles => :app do
   stop_backgroundrb
   start_backgroundrb
 end
+
+after :deploy, :restart_backgroundrb
