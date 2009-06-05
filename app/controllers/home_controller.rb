@@ -70,6 +70,10 @@ class HomeController < ApplicationController
     @testimonials = testimonials
   end
 
+  def privacy
+    @testimonials = testimonials
+  end
+
   private
 
   def get_feed
