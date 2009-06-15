@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 
   def initialize
     @cache = MemCache.new("127.0.0.1")
-    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W', :port => '8001', :cache => @cache, :cache_timeout => 3600})
+    @cms = CMSBinding::CMSSource.new({:site => 'ATQ-4W', :server => 'cms.hostingoperationscentre.com', :port => '8000', :cache => @cache, :cache_timeout => 3600})
   end
 
   def content category_name
