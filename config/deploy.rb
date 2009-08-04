@@ -16,6 +16,8 @@ set :use_sudo, false
 set :mongrel_port, "3000"
 set :mongrel_address, "74.205.99.188"
 
+set :rails_env, "production"
+
 role :app, "74.205.99.188"
 role :web, "74.205.99.188"
 role :db,  "74.205.99.188", :primary => true
@@ -37,3 +39,16 @@ task :restart_backgroundrb, :roles => :app do
 end
 
 after :deploy, :restart_backgroundrb
+
+namespace :deploy do
+  task :stop do
+    run "cd #{current_path} && mongrel_rails stop"
+  end
+  task :start do
+    run "cd #{current_path} && mongrel_rails start -d -e #{rails_env} -a #{mongrel_address} -p #{mongrel_port}"
+  end
+  task :restart do
+    stop
+    start
+  end
+end
