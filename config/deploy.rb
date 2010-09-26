@@ -22,24 +22,6 @@ role :app, "74.205.99.188"
 role :web, "74.205.99.188"
 role :db,  "74.205.99.188", :primary => true
 
-desc "Stop the backgroundrb server"
-task :stop_backgroundrb , :roles => :app do
-  run "cd #{current_path} && ./script/backgroundrb stop"
-end
-
-desc "Start the backgroundrb server"
-task :start_backgroundrb , :roles => :app do
-  run "cd #{current_path} && RAILS_ENV=production ./script/backgroundrb start > /dev/null 2>&1"
-end
-
-desc "Restart the backgroundrb server"
-task :restart_backgroundrb, :roles => :app do
-  stop_backgroundrb
-  start_backgroundrb
-end
-
-after :deploy, :restart_backgroundrb
-
 namespace :deploy do
   task :stop do
     run "cd #{current_path} && mongrel_rails stop"
