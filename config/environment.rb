@@ -28,8 +28,9 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'haml'
-  config.gem 'ratom'
-  config.gem 'Ruby-MemCache'
+  config.gem 'ratom', :lib => 'atom'
+  config.gem 'Ruby-MemCache', :lib => 'memcache'
+  config.gem 'twm-cms-bindings'
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
