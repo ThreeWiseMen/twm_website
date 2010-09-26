@@ -1,0 +1,50 @@
+- content_for :title do
+  Three Wise Men Inc. Application Hosting, Video Hosting
+- content_for :description do
+  Application hosting focuses on ensuring a functional application rather than just server uptime. Video hosting automated by our specialized tooling and distributed by Amazon Cloud.
+- content_for :keywords do
+  application hosting, java hosting, ruby hosting, rails hosting, ruby on rails hosting, video hosting, oshawa, whitby, durham, toronto, ontario, canada
+%h1
+  %img{:alt => "Hosting Logo", :src => "/images/apphosting-trans.png"}/
+  = @intro.headline
+= @intro.contents
+#hostingplans.ui-tabs-hide
+  %ul
+    %li
+      %a{:href => "#video"}= @video.headline
+    %li
+      %a{:href => "#shared1"}= @shared1.headline
+    %li
+      %a{:href => "#shared2"}= @shared2.headline
+    %li
+      %a{:href => "#shared3"}= @shared3.headline
+    %li
+      %a{:href => "#ded1"}= @dedicated1.headline
+    %li
+      %a{:href => "#ded2"}= @dedicated2.headline
+    %li
+      %a{:href => "#custom"}= @custom.headline
+    %li
+      %a{:href => "#pricing"}= @pricing.headline
+  #video.plan
+    = @video.contents
+  #shared1.plan
+    = @shared1.contents
+  #shared2.plan
+    = @shared2.contents
+  #shared3.plan
+    = @shared3.contents
+  #ded1.plan
+    = @dedicated1.contents
+  #ded2.plan
+    = @dedicated2.contents
+  #custom.plan
+    = @custom.contents
+  #pricing.plan
+    = @pricing.contents
+%div{:style => "clear: both"}
+:javascript
+  $("#hostingplans").tabs({
+    fx: { opacity: 'toggle', duration: 'fast' },
+    cookie: { expires: 1, name: "twm_tab_hosting" }
+  });

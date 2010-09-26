@@ -1,0 +1,38 @@
+- content_for :title do
+  Three Wise Men Inc. Software Development and Consulting
+- content_for :description do
+  We provide outsourced application development and consulting services to either replace or complement in-house development talent. We also help companies improve their own software development practices by adopting agile processes and tools.
+- content_for :keywords do
+  java, ruby on rails, ruby, xml, xsl, xsl:fo, xslt, content management, content transformation, content publishing, multi-tenant content management, oshawa, whitby, durham, toronto, ontario, canada
+.mainpanel
+  %h1{:style => "display: none"} Agile Software Development
+  = @article.contents
+.service1
+  = link_to image_tag("/images/development-trans.png"), :action => "development"
+  %h2 Application Development
+  %p
+    Unparalleled technical skill and the world's best open-source foundations at your disposal.
+  %p.more= link_to "read more...", { :action => "development" }, :class => "linkmarker"
+.service2
+  = link_to image_tag("/images/consulting-trans.png"), :action => "consulting"
+  %h2 Consulting
+  %p
+    A critical eye, creative and practical
+    solutions for your tough problems.
+  %p.more= link_to "read more...", { :action => "consulting" }, :class => "linkmarker"
+.service3
+  = link_to image_tag("/images/apphosting-trans.png"), :action => "hosting"
+  %h2 Application Hosting
+  %p
+    Unparalleled 100% uptime guarantee for qualified applications.
+  %p.more= link_to "read more...", { :action => "hosting" }, :class => "linkmarker"
+.bottom
+#blog
+  %h1
+    %span{:style => "color: #aaa"} Latest blog from our CEO:
+    = @blog_item.title
+  %p
+    = @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...")
+    = link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker"
+:javascript
+  $("#blog").corner("11px");

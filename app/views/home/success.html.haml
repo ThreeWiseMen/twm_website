@@ -1,0 +1,60 @@
+- content_for :title do
+  Three Wise Men Inc. Success Stories
+- content_for :description do
+  We are engaged in about two dozen projects per year, ranging in budget from $5K to $500K. Many projects are very private, and we are unable to discuss. Here we highlight a broad range of projects to give you an idea of the breadth of our capabilities. We're not going for quantity here, rather quality.
+- content_for :keywords do
+  performance audit, performance tuning, website navigation, startup company, telecommunications, health services, oshawa, whitby, durham, toronto, ontario, canada
+#nav
+#list
+  .success
+    %a{:href => "/pdf/success/CaseStudy-LakeridgeHealthPerformanceEnhancements.pdf", :style => "text-decoration: none;"}
+      %img{:alt => "CS Lakeridge", :src => "/images/success/CaseStudy-LakeridgeHealthPerformanceEnhancements.png"}/
+    %h2 Lakeridge Health Website Receives Dramatic Gains After Performance Audit
+    %p
+      THE CHALLENGE: The customer had brought their new website online. It was functional, tested and
+      approved. However, when placed into production under a full traffic load, performance was unacceptable.
+      As a quick-fix, caching was employed creating acceptable load times. This however delayed how quickly the
+      customer could deploy new content (1 to 4 hours). There also remained the fact that...
+  .success
+    %a{:href => "/pdf/success/CaseStudy-NavDriver.pdf", :style => "text-decoration: none;"}
+      %img{:alt => "CS NavDriver", :src => "/images/success/CaseStudy-NavDriver.png"}/
+    %h2 Startup Company Gains New Business Model, Extreme Performance
+    %p
+      THE CHALLENGE: NavDriver is a technology that dynamically builds supplemental navigation for websites
+      to help guide visitors to relevant popular information. With years of academic research behind it, a
+      company was launched in 2007 to commercialize the technology and a student developer implemented the first
+      commercial version of the software from the academic reference implementation. In...
+  .success
+    %a{:href => "/pdf/success/CaseStudy-DTVSelfHelp.pdf", :style => "text-decoration: none;"}
+      %img{:alt => "CS DTV", :src => "/images/success/CaseStudy-DTVSelfHelp.png"}/
+    %h2 Canada’s Largest Communications and Media Company Improves Customer Service and Reduces Call-Centre Activity
+    %p
+      THE CHALLENGE: This client found an opportunity to improve customer service and increase revenue
+      opportunities by pro-actively engaging customers to ensure their in-home equipment was optimally configured
+      for television-on-demand services. They believed that if, in addition to call center activities, their
+      customers were offered a method to turn on the service themselves, and at their...
+  .success
+    %a{:href => "/pdf/success/CaseStudy-ModemSwap.pdf", :style => "text-decoration: none;"}
+      %img{:alt => "CS ModemSwap", :src => "/images/success/CaseStudy-ModemSwap.png"}/
+    %h2 Telecommunications - Canada's Largest Communications and Media Company
+    %p
+      THE CHALLENGE: The upgrade of one of Canada's largest cable and Internet service providers' high-speed
+      Internet infrastructure was being delayed by older equipment in subscribers homes. The company decided to
+      provide free upgrades to expedite the pending infrastructure changes but also needed a solution that would
+      minimize the impact to staffing and other resources at the call center, customer...
+  .success
+    %a{:href => "/pdf/success/CaseStudy-EasyBrandingTools.pdf", :style => "text-decoration: none;"}
+      %img{:alt => "CS EasyBranding", :src => "/images/success/CaseStudy-EasyBrandingTools.png"}/
+    %h2 EasyBrandingTools.com - Technology that Brings Out Business Potential
+    %p
+      THE CHALLENGE: Few entrepreneurs start a business because they enjoy the tedium of creating business cards,
+      web sites and letterhead for themselves. Many are not skilled in graphic design or technology and quickly get
+      bogged down in the time consuming process of creating an identity. Providing a consistent professional image
+      as the business matures is critical for small businesses to...
+:javascript
+  $("#list").cycle({
+    fx:       'scrollLeft',
+    speed:    'fast',
+    timeout:  13000,
+    pager:    '#nav'
+  });

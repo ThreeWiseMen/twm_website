@@ -1,7 +1,5 @@
 class HomeController < ApplicationController
-  require 'atom'
   require 'uri'
-  require 'CMSBinding'
 
   layout "layouts/content"
 

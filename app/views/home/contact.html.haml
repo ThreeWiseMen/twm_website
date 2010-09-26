@@ -1,0 +1,37 @@
+- content_for :title do
+  Three Wise Men Inc. Serving the GTA Since 2002
+- content_for :description do
+  We are located on the West edge of Oshawa at the Whitby border just south of the 401.
+- content_for :keywords do
+  canada, toronto, durham region, oshawa, whitby
+#map
+%h1 Contact Us
+#address
+  %p
+    %strong ** New Unit Number starting July 1, 2010 **
+  %p Three Wise Men Inc.
+  %p 1077 Boundary Rd., Unit 207
+  %p Oshawa, ON, Canada
+  %p L1J 8P8
+#phones
+  %p
+    %strong ** New Oshawa Numbers starting June 2010 **
+  %p
+    %span> Toronto (Voice):
+    +1 416 848 0709
+  %p
+    %span> Oshawa (Voice):
+    +1 905 440 2029
+  %p
+    %span> Oshawa (Fax):
+    +1 905 233 4846
+%div{:style => "clear: both"}
+%script{:src => "http://maps.google.com/maps?file=api&amp;v=1&amp;key=ABQIAAAAHtGr9KdH_iaAjJ8MMK3ETxRC5tJD5lWLxeAc3yWhXC76UL6qUxQ-wvMdIMIzlyA_OIgwrZVcnuI3ZA", :type => "text/javascript"}
+:javascript
+  var map = new GMap(document.getElementById("map"));
+  var point = new GPoint(-78.88534082641602, 43.861570744481884);
+  var marker = new GMarker(point);
+  map.addControl(new GSmallMapControl());
+  map.centerAndZoom(point, 4);
+  map.addOverlay(marker);
+  marker.openInfoWindowHtml("<div id='mapaddress'><strong>Three Wise Men Inc.</strong><br />Unit 207, 1077 Boundary Rd.,<br />Oshawa, ON  L1J 8P8</div>");

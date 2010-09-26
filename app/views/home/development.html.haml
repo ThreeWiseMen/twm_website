@@ -1,0 +1,52 @@
+- content_for :title do
+  Three Wise Men Inc. Software Development Services
+- content_for :description do
+  Software development services utilizing the most prominent technologies such as Java, Ruby On Rails, Microsoft .NET
+- content_for :keywords do
+  java, java software development, hibernate, ejb3, seam, jboss, glassfish, apache, fop, batik, jackrabbit, lucene, rails, ruby, ruby on rails, ruby consulting, rails software development, ruby software development, dotnet, .net, oracle, microsoft sql server, oracle, postgresql, mysql, oshawa, whitby, durham, toronto, ontario, canada
+%h1
+  %img{:alt => "Development Logo", :src => "/images/development-trans.png"}/
+  = @intro.headline
+.inset= @intro.contents
+#technologies
+  %ul
+    %li
+      %a{:href => "#java"}= @java.headline
+    %li
+      %a{:href => "#rails"}= @rails.headline
+    %li
+      %a{:href => "#dotnet"}= @dotnet.headline
+    %li
+      %a{:href => "#database"}= @database.headline
+    %li
+      %a{:href => "#expectations"}= @expect.headline
+    %li
+      %a{:href => "#pricing"}= @budgeting.headline
+  #java.tech
+    %img{:alt => "Java", :src => "/images/tech_logos/java-64x128.png"}/
+    = @java.contents
+    %div{:style => "clear: both"}
+  #rails.tech
+    %img{:alt => "Rails", :src => "/images/tech_logos/rails-100x128.png"}/
+    = @rails.contents
+    %div{:style => "clear: both"}
+  #dotnet.tech
+    %img{:alt => ".NET", :src => "/images/tech_logos/dotnet-117x111.png"}/
+    = @dotnet.contents
+    %div{:style => "clear: both"}
+  #database.tech
+    %img{:alt => "PostgreSQL", :src => "/images/tech_logos/postgresql-95x51.png"}/
+    = @database.contents
+    %div{:style => "clear: both"}
+  #expectations.tech
+    = @expect.contents
+  #pricing.tech
+    = @budgeting.contents
+:javascript
+  var $tabs = $("#technologies").tabs({
+    fx: { opacity: 'toggle', duration: 'fast' },
+    cookie: { expires: 1, name: "twm_tab_dev" }
+  });
+- if params[:id]
+  :javascript
+    $tabs.tabs('select', #{dev_tab_index(params[:id])});

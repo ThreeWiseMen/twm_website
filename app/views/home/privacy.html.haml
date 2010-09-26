@@ -1,44 +1,33 @@
-<% content_for :title do %>Three Wise Men Inc. Privacy Policy<% end %>
-<% content_for :description do %>We do not share contact information with outside agencies, but collect statistical data to help us craft a better website.<% end %>
-<% content_for :keywords do %>privacy policy, statistical data collection, oshawa, whitby, durham, toronto, ontario, canada<% end %>
-
-<h1>Three Wise Men Inc. Privacy Policy</h1>
-
-<p>
+- content_for :title do
+  Three Wise Men Inc. Privacy Policy
+- content_for :description do
+  We do not share contact information with outside agencies, but collect statistical data to help us craft a better website.
+- content_for :keywords do
+  privacy policy, statistical data collection, oshawa, whitby, durham, toronto, ontario, canada
+%h1 Three Wise Men Inc. Privacy Policy
+%p
   Three Wise Men takes your personal information privacy very seriously. We strive to support
   this in our software, and in our business operations.
-</p>
-
-<p>
+%p
   Three Wise Men does not collect personal information, but if you use our feedback form, or
   sign up for a service offered by one of our partners, you will need to fill out some business
   information, which may include a personal phone number or email address by which you wish us
   or our partner to contact you.
-</p>
-
-<p>
+%p
   Three Wise Men will never pass this information on to any third party.
-</p>
-
-<p>
+%p
   Sign-up forms for services offered by our partners are archived at our office facility, and
   may be kept up to 7 years after termination of service for legal and taxation records purposes.
-</p>
-
-<p>
+%p
   At any time, you may contact us and we will send you a copy of any business information that
   we have on file for you so that you may make corrections.
-</p>
-
-<p>
+%p
   Three Wise Men cannot guarantee or make statements on the privacy policies of companies
   using our software. If you have a request, question or comment for an organization using Three
   Wise Men software, please contact them directly. Be advised that certain practices (ie.
   unsolicited commercial email) are against the license agreements for some of our products. All
   reported violations of our license agreements are followed-up.
-</p>
-
-<p>
+%p
   This web site logs requests to our server. These logs capture computer information and
   navigation and click-stream data, such as the originating IP (ie. 24.100.48.36) address of an
   agent requesting a URL and the email address of the site visitor if they have included it in
@@ -46,9 +35,6 @@
   Logged information is not disclosed outside of Three Wise Men staff or those under contract to
   conduct maintenance to our web server. The logs are permanently archived as raw research
   material. The logs may not be accessed, opted out of or changed by site visitors.
-</p>
-
-<p>
+%p
   Please direct any questions or comments regarding this privacy policy to
-  <a href="mailto:info@threewisemen.ca">info@threewisemen.ca</a>
-</p>
+  %a{:href => "mailto:info@threewisemen.ca"} info@threewisemen.ca

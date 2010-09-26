@@ -1,0 +1,37 @@
+- content_for :title do
+  Three Wise Men Inc. Consulting Services
+- content_for :description do
+  We have helped many companies overcome what appeared to be significant barriers at the time.
+- content_for :keywords do
+  performance tuning, performance optimized, systems integration, team communications, software development processes, testing, automated testing, integration testing, unit testing, oshawa, whitby, durham, toronto, ontario, canada
+%h1
+  %img{:alt => "Consulting Logo", :src => "/images/consulting-trans.png"}/
+  = @intro.headline
+.inset= @intro.contents
+#consultingrealms
+  %ul
+    %li
+      %a{:href => "#perf"}= @performance.headline
+    %li
+      %a{:href => "#glue"}= @integration.headline
+    %li
+      %a{:href => "#team"}= @communication.headline
+    %li
+      %a{:href => "#processes"}= @development.headline
+    %li
+      %a{:href => "#testing"}= @testing.headline
+  #perf.realm
+    = @performance.contents
+  #glue.realm
+    = @integration.contents
+  #team.realm
+    = @communication.contents
+  #processes.realm
+    = @development.contents
+  #testing.realm
+    = @testing.contents
+:javascript
+  $("#consultingrealms").tabs({
+    fx: { opacity: 'toggle', duration: 'fast' },
+    cookie: { expires: 1, name: "twm_tab_consulting" }
+  });
