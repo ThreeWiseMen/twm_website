@@ -1,0 +1,31 @@
+!!! Strict
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{"http-equiv" => "Content-type", "content" => "text/html; charset=utf-8"}
+    %meta{"http-equiv" => "Content-Script-Type", "content" => "text/javascript"}
+    %meta{"http-equiv" => "Content-Style-Type", "content" => "text/css"}
+    %meta{"name" => "description", "content" => yield(:description)}
+    %meta{"name" => "keywords", "content" => yield(:keywords)}
+    %title Three Wise Men Inc. Software Development and Consulting, Java, Ruby On Rails, Application Hosting
+    = stylesheet_link_tag 'all.min'
+    = stylesheet_link_tag 'plain'
+    = javascript_include_tag 'all.min'
+  %body{:onload => "page_init()"}
+    #shell
+      :javascript
+        google_ad_client = "pub-9787171224201622";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        google_ad_format = "728x90_as";
+        google_ad_type = "text_image";
+        google_ad_channel ="";
+      %script{:src => "http://pagead2.googlesyndication.com/pagead/show_ads.js"}
+
+      #home_body
+        .contentpaneldark
+          = yield
+
+    %script{:src => "http://www.google-analytics.com/urchin.js"}
+    :javascript
+      _uacct = "UA-526826-2";
+      //urchinTracker();

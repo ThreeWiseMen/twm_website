@@ -1,0 +1,11 @@
+!!! Strict
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  = render :partial => "layouts/head"
+  %body{:onload => "page_init()"}
+    #shell
+      = render :partial => "/layouts/banner"
+      #home_body
+        = yield
+        .submenu_shadow
+    = render :partial => "/layouts/copyright"
+    = render :partial => "/layouts/analytics"
