@@ -1,4 +1,3 @@
-# Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
 
   def sense_page(c, a)
@@ -6,5 +5,5 @@ module ApplicationHelper
       "active"
     end
   end
-  
+
 end

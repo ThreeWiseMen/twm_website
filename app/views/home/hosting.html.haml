@@ -7,7 +7,7 @@
 %h1
   %img{:alt => "Hosting Logo", :src => "/images/apphosting-trans.png"}/
   = @intro.headline
-= @intro.contents
+= @intro.contents.html_safe
 #hostingplans.ui-tabs-hide
   %ul
     %li
@@ -27,21 +27,21 @@
     %li
       %a{:href => "#pricing"}= @pricing.headline
   #video.plan
-    = @video.contents
+    = @video.contents.html_safe
   #shared1.plan
-    = @shared1.contents
+    = @shared1.contents.html_safe
   #shared2.plan
-    = @shared2.contents
+    = @shared2.contents.html_safe
   #shared3.plan
-    = @shared3.contents
+    = @shared3.contents.html_safe
   #ded1.plan
-    = @dedicated1.contents
+    = @dedicated1.contents.html_safe
   #ded2.plan
-    = @dedicated2.contents
+    = @dedicated2.contents.html_safe
   #custom.plan
-    = @custom.contents
+    = @custom.contents.html_safe
   #pricing.plan
-    = @pricing.contents
+    = @pricing.contents.html_safe
 %div{:style => "clear: both"}
 :javascript
   $("#hostingplans").tabs({

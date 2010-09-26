@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   require 'uri'
 
-  layout "layouts/content"
+  layout "application"
 
   caches_page :index, :contact, :development, :hosting, :success, :consulting, :privacy
 

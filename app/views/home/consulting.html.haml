@@ -7,7 +7,8 @@
 %h1
   %img{:alt => "Consulting Logo", :src => "/images/consulting-trans.png"}/
   = @intro.headline
-.inset= @intro.contents
+.inset= @intro.contents.html_safe
+%h2 Layout: #{controller.send :_layout}
 #consultingrealms
   %ul
     %li
@@ -21,15 +22,15 @@
     %li
       %a{:href => "#testing"}= @testing.headline
   #perf.realm
-    = @performance.contents
+    = @performance.contents.html_safe
   #glue.realm
-    = @integration.contents
+    = @integration.contents.html_safe
   #team.realm
-    = @communication.contents
+    = @communication.contents.html_safe
   #processes.realm
-    = @development.contents
+    = @development.contents.html_safe
   #testing.realm
-    = @testing.contents
+    = @testing.contents.html_safe
 :javascript
   $("#consultingrealms").tabs({
     fx: { opacity: 'toggle', duration: 'fast' },

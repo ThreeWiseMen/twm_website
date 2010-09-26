@@ -27,7 +27,7 @@
     - @testimonials.each do |t|
       .quote
         .blockquote
-          = t.contents
+          = t.contents.html_safe
         .credit
           = t.headline
 %ul#mainmenu

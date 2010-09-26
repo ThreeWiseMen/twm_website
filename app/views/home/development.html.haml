@@ -24,24 +24,24 @@
       %a{:href => "#pricing"}= @budgeting.headline
   #java.tech
     %img{:alt => "Java", :src => "/images/tech_logos/java-64x128.png"}/
-    = @java.contents
+    = @java.contents.html_safe
     %div{:style => "clear: both"}
   #rails.tech
     %img{:alt => "Rails", :src => "/images/tech_logos/rails-100x128.png"}/
-    = @rails.contents
+    = @rails.contents.html_safe
     %div{:style => "clear: both"}
   #dotnet.tech
     %img{:alt => ".NET", :src => "/images/tech_logos/dotnet-117x111.png"}/
-    = @dotnet.contents
+    = @dotnet.contents.html_safe
     %div{:style => "clear: both"}
   #database.tech
     %img{:alt => "PostgreSQL", :src => "/images/tech_logos/postgresql-95x51.png"}/
-    = @database.contents
+    = @database.contents.html_safe
     %div{:style => "clear: both"}
   #expectations.tech
-    = @expect.contents
+    = @expect.contents.html_safe
   #pricing.tech
-    = @budgeting.contents
+    = @budgeting.contents.html_safe
 :javascript
   var $tabs = $("#technologies").tabs({
     fx: { opacity: 'toggle', duration: 'fast' },

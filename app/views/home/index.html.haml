@@ -6,7 +6,7 @@
   java, ruby on rails, ruby, xml, xsl, xsl:fo, xslt, content management, content transformation, content publishing, multi-tenant content management, oshawa, whitby, durham, toronto, ontario, canada
 .mainpanel
   %h1{:style => "display: none"} Agile Software Development
-  = @article.contents
+  = @article.contents.html_safe
 .service1
   = link_to image_tag("/images/development-trans.png"), :action => "development"
   %h2 Application Development
@@ -32,7 +32,7 @@
     %span{:style => "color: #aaa"} Latest blog from our CEO:
     = @blog_item.title
   %p
-    = @blog_item.summary.gsub(/\s+\[\.\.\.\]/, "...")
+    = @blog_item.summary.html_safe
     = link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker"
 :javascript
   $("#blog").corner("11px");
