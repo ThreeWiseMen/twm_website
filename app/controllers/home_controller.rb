@@ -1,8 +1,6 @@
 class HomeController < ApplicationController
   require 'uri'
 
-  layout "application"
-
   caches_page :index, :contact, :development, :hosting, :success, :consulting, :privacy
 
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
@@ -11,7 +9,7 @@ class HomeController < ApplicationController
     @blog_item = get_feed.entries.first
     @article = content("home")
     @testimonials = testimonials
-    render :layout => "layouts/home"
+    render :layout => "home"
   end
 
   def development
@@ -23,6 +21,7 @@ class HomeController < ApplicationController
     @expect = content("appdev_expect")
     @budgeting = content("appdev_budgeting")
     @testimonials = testimonials
+    render :layout => "content"
   end
 
   def consulting
@@ -33,6 +32,7 @@ class HomeController < ApplicationController
     @development = content("consulting_development")
     @testing = content("consulting_testing")
     @testimonials = testimonials
+    render :layout => "content"
   end
 
   def hosting
@@ -46,6 +46,7 @@ class HomeController < ApplicationController
     @custom = content("hosting_custom")
     @pricing = content("hosting_pricing")
     @testimonials = testimonials
+    render :layout => "content"
   end
 
   def blogentry
@@ -57,19 +58,26 @@ class HomeController < ApplicationController
       end
     end
     @testimonials = testimonials
-    redirect_to "/404.html" if @title.nil?
+    if @title.nil?
+      redirect_to "/404.html"
+    else
+      render :layout => "content"
+    end
   end 
 
   def success
     @testimonials = testimonials
+    render :layout => "content"
   end
 
   def contact
     @testimonials = testimonials
+    render :layout => "content"
   end
 
   def privacy
     @testimonials = testimonials
+    render :layout => "content"
   end
 
   private

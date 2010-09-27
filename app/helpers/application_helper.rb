@@ -6,4 +6,8 @@ module ApplicationHelper
     end
   end
 
+  def strip_html string
+    string.gsub(/<\/?[^>]*>/, '').gsub("Continue reading &#8594;", '')
+  end
+
 end

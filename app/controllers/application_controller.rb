@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  helper :all
-  include ExceptionNotifiable
+#  helper :all
+#  include ExceptionNotifiable
 
   def initialize
     @cache = MemCache.new("127.0.0.1")

@@ -7,7 +7,7 @@
 %h1
   %img{:alt => "Development Logo", :src => "/images/development-trans.png"}/
   = @intro.headline
-.inset= @intro.contents
+.inset= @intro.contents.html_safe
 #technologies
   %ul
     %li
