@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
 
-gem 'postgres-pr'
+gem 'pg'
 gem 'haml'
 gem 'ratom', :require => 'atom'
 gem 'Ruby-MemCache', :require => 'memcache'
