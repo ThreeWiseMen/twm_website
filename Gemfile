@@ -9,6 +9,7 @@ gem 'Ruby-MemCache', :require => 'memcache'
 gem 'twm-cms-bindings'
 gem 'newrelic_rpm'
 gem 'capistrano', :group => :development
+gem 'unicorn'
 
 # Use unicorn as the web server
 # gem 'unicorn'
