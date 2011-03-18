@@ -27,12 +27,13 @@
     Unparalleled 100% uptime guarantee for qualified applications.
   %p.more= link_to "read more...", { :action => "hosting" }, :class => "linkmarker"
 .bottom
-#blog
-  %h1
-    %span{:style => "color: #aaa"} Latest blog from our CEO:
-    = @blog_item.title
-  %p
-    = strip_html(@blog_item.summary.html_safe)
-    = link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker"
-:javascript
-  $("#blog").corner("11px");
+- if @blog_item
+  #blog
+    %h1
+      %span{:style => "color: #aaa"} Latest blog from our CEO:
+      = @blog_item.title
+    %p
+      = strip_html(@blog_item.summary.html_safe)
+      = link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker"
+  :javascript
+    $("#blog").corner("11px");
