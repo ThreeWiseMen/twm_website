@@ -35,7 +35,7 @@ namespace :deploy do
     run "cat #{deploy_to}/shared/pids/unicorn.pid* | xargs kill -s QUIT"
   end
   task :start do
-    run "cd #{current_path} && bundle exec $HOME/ruby-1.9.2/bin/unicorn_rails --config-file #{current_path}/config/unicorn.#{rails_env}.conf.rb --daemonize --env #{rails_env}"
+    run "cd #{current_path} && bundle exec unicorn_rails --config-file #{current_path}/config/unicorn.#{rails_env}.conf.rb --daemonize --env #{rails_env}"
   end
   task :restart do
     run "cat #{deploy_to}/shared/pids/unicorn.pid | xargs kill -s USR2 && sleep 3s && cat #{deploy_to}/shared/pids/unicorn.pid.oldbin | xargs kill -s QUIT"
