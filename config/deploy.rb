@@ -26,7 +26,7 @@ task :production do
   role :db,  "74.205.99.188", :primary => true
   set :branch, "production"
   set :rails_env, "production"
-#  default_environment['PATH'] = "/home/twm/ruby-1.9.2/bin:/usr/local/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/home/twm/bin"
+  default_environment['PATH'] = "/home/twm/.rvm/gems/ruby-1.9.2-p180/bin:/home/twm/.rvm/gems/ruby-1.9.2-p180@global/bin:/home/twm/.rvm/rubies/ruby-1.9.2-p180/bin:/home/twm/.rvm/bin:/usr/local/pgsql/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin"
   default_environment['LD_LIBRARY_PATH'] = "/usr/local/pgsql-8.4/lib:/usr/local/lib:/usr/lib"
 end
 
