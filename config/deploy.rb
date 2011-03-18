@@ -22,7 +22,7 @@ role :app, "74.205.99.188"
 role :web, "74.205.99.188"
 role :db,  "74.205.99.188", :primary => true
 
-default_environment['PATH'] = "/home/twm/ruby-1.9.2/bin:/usr/local/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/opt/CollabNet_Subversion/bin:/home/twm/bin"
+default_environment['PATH'] = "/home/twm/ruby-1.9.2/bin:/usr/local/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/home/twm/bin"
 
 namespace :deploy do
   task :stop do
