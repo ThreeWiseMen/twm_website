@@ -7,10 +7,7 @@ default_run_options[:pty] = true
 set :scm, :git
 set :user, 'twm'
 set :repository, 'git@github.com:ThreeWiseMen/twm_website.git'
-set :deploy_via, :copy
-set :copy_cache, true
-set :copy_exclude, ['.git/*', '.gitignore']
-set :copy_compression, :bz2
+set :deploy_via, "remote_cache"
 
 set :deploy_to, "~/#{application}"
 set :use_sudo, false
