@@ -6,7 +6,7 @@
 # Use at least one worker per core if you're on a dedicated server,
 # more will usually help for _short_ waits on databases/caches.
 APP_HOME = '/home/twm/TWM-Website'
-worker_processes 2
+worker_processes 4
 
 # Help ensure your application will always spawn in the symlinked
 # "current" directory that Capistrano sets up.
@@ -17,7 +17,7 @@ working_directory "#{APP_HOME}/current" # available in 0.94.0+
 listen '74.205.99.188:3000', :tcp_nopush => true
 
 # nuke workers after 30 seconds instead of 60 seconds (the default)
-timeout 60
+timeout 300
 
 # feel free to point this anywhere accessible on the filesystem
 pid "#{APP_HOME}/shared/pids/unicorn.pid"
