@@ -1,5 +1,9 @@
 require 'bundler/capistrano'
 
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano"                               # Load RVM's capistrano plugin.
+set :rvm_ruby_string, '1.9.2@twm'                      # Or whatever env you want it to run in.
+
 default_run_options[:pty] = true
 
 set :application, "TWM-Website"
@@ -21,7 +25,7 @@ task :production do
   role :db,  "74.205.99.188", :primary => true
   set :branch, "production"
   set :rails_env, "production"
-  default_environment['PATH'] = "/home/twm/ruby-1.9.2/bin:/usr/local/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/home/twm/bin"
+#  default_environment['PATH'] = "/home/twm/ruby-1.9.2/bin:/usr/local/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/home/twm/bin"
 end
 
 namespace :deploy do
