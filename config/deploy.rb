@@ -27,6 +27,7 @@ task :production do
   set :branch, "production"
   set :rails_env, "production"
 #  default_environment['PATH'] = "/home/twm/ruby-1.9.2/bin:/usr/local/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/home/twm/bin"
+  default_environment['LD_LIBRARY_PATH'] = "/usr/local/pgsql-8.4/lib:/usr/local/lib:/usr/lib"
 end
 
 namespace :deploy do
