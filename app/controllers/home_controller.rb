@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
   def index
-    @blog_item = get_feed.first.entries.first
+    @blog_item = get_feed.entries.first
     @article = content("home")
     @testimonials = testimonials
     render :layout => "home"
@@ -51,7 +51,7 @@ class HomeController < ApplicationController
 
   def blogentry
     id = "http://svetzal.wordpress.com/?p=#{params[:id]}"
-    get_feed.first.entries.each do |entry|
+    get_feed.entries.each do |entry|
       if entry.id == id
         @title = entry.title
         @content = entry.content
@@ -84,11 +84,16 @@ class HomeController < ApplicationController
 
   def get_feed
     data = @cache["blog"]
-    if data.nil?
+    logger.warn("Data is #{data.inspect}")
+    logger.warn("Data #{data.nil?}")
+    logger.warn("Class #{data.class.name}")
+    logger.warn("Nil #{nil.inspect}")
+    if data.compact.empty?
+      logger.warn("Priming cache...")
       data = Atom::Feed.load_feed(URI.parse(FEED_URL))
-      @cache.set("blog", data, 3600)
+      @cache.set("blog", data, 3600) unless data.nil?
     end
-    data
+    data.first unless data.nil? && data.class.name == "Array"
   end
 
 end
