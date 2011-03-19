@@ -1,8 +1,6 @@
 class HomeController < ApplicationController
   require 'uri'
 
-  caches_page :index, :contact, :development, :hosting, :success, :consulting, :privacy
-
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
   def index
