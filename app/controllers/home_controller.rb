@@ -51,7 +51,7 @@ class HomeController < ApplicationController
 
   def blogentry
     id = "http://svetzal.wordpress.com/?p=#{params[:id]}"
-    get_feed.entries.each do |entry|
+    get_feed.first.entries.each do |entry|
       if entry.id == id
         @title = entry.title
         @content = entry.content
