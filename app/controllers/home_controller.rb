@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
   def index
-    @blog_item = get_feed.entries.first
+    #@blog_item = get_feed.entries.first
     @article = content("home")
     @testimonials = testimonials
     render :layout => "home"
