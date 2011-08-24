@@ -17,6 +17,5 @@ production:
   database: twm_production
   username: twm
   password: twm
-  host: 10.242.58.197
-  port: 5433
-
+  host: /tmp
+  port: 5432

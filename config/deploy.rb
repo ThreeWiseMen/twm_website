@@ -21,9 +21,9 @@ set :use_sudo, false
 
 
 task :production do
-  role :app, "74.205.99.188"
-  role :web, "74.205.99.188"
-  role :db,  "74.205.99.188", :primary => true
+  role :app, "209.15.242.226"
+  role :web, "209.15.242.226"
+  role :db,  "209.15.242.226", :primary => true
   set :branch, "production"
   set :rails_env, "production"
   default_environment['PATH'] = "/home/twm/.rvm/gems/ruby-1.9.2-p180/bin:/home/twm/.rvm/gems/ruby-1.9.2-p180@global/bin:/home/twm/.rvm/rubies/ruby-1.9.2-p180/bin:/home/twm/.rvm/bin:/usr/local/pgsql/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin"

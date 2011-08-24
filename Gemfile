@@ -1,9 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '3.0.10'
 
 gem 'pg'
 gem 'haml'
+gem 'sass'
 gem 'ratom', :require => 'atom'
 gem 'Ruby-MemCache', :require => 'memcache'
 gem 'twm-cms-bindings'
