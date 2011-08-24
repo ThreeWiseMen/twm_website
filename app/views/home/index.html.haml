@@ -33,7 +33,7 @@
       %span{:style => "color: #aaa"} Latest blog from our CEO:
       = @blog_item.title
     %p
-      = strip_html(@blog_item.summary.html_safe)
+      != strip_html(@blog_item.summary.html_safe)
       = link_to "read more...", { :action => "blogentry", :id => blog_strip_id(@blog_item.id) }, :class => "linkmarker"
   :javascript
     $("#blog").corner("11px");
