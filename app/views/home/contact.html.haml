@@ -22,12 +22,23 @@
     %span> Oshawa (Fax):
     +1 905 233 4846
 %div{:style => "clear: both"}
-%script{:src => "http://maps.google.com/maps?file=api&amp;v=1&amp;key=ABQIAAAAHtGr9KdH_iaAjJ8MMK3ETxRC5tJD5lWLxeAc3yWhXC76UL6qUxQ-wvMdIMIzlyA_OIgwrZVcnuI3ZA", :type => "text/javascript"}
+%script{:src => "http://maps.googleapis.com/maps/api/js?sensor=false"}
 :javascript
-  var map = new GMap(document.getElementById("map"));
-  var point = new GPoint(-78.88534082641602, 43.861570744481884);
-  var marker = new GMarker(point);
-  map.addControl(new GSmallMapControl());
-  map.centerAndZoom(point, 4);
-  map.addOverlay(marker);
-  marker.openInfoWindowHtml("<div id='mapaddress'><strong>Three Wise Men Inc.</strong><br />Unit 207, 1077 Boundary Rd.,<br />Oshawa, ON  L1J 8P8</div>");
+  $(document).ready(function() {
+    var latlng = new google.maps.LatLng(43.86157074448188, -78.88534082641602);
+    var myOptions = {
+      zoom: 13,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title:"Three Wise Men Inc."
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: "<div id='mapaddress'><strong>Three Wise Men Inc.</strong><br />Unit 207, 1077 Boundary Rd.,<br />Oshawa, ON  L1J 8P8</div>"
+    });
+    infowindow.open(map,marker);
+  });
