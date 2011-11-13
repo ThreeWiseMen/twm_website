@@ -5,7 +5,7 @@
 - content_for :keywords do
   application hosting, java hosting, ruby hosting, rails hosting, ruby on rails hosting, video hosting, oshawa, whitby, durham, toronto, ontario, canada
 %h1
-  %img{:alt => "Hosting Logo", :src => "/images/apphosting-trans.png"}/
+  = image_tag('apphosting-trans.png', :alt => 'App Hosting Logo')
   = @intro.headline
 = @intro.contents.html_safe
 #hostingplans.ui-tabs-hide

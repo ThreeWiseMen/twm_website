@@ -5,7 +5,7 @@
 - content_for :keywords do
   java, java software development, hibernate, ejb3, seam, jboss, glassfish, apache, fop, batik, jackrabbit, lucene, rails, ruby, ruby on rails, ruby consulting, rails software development, ruby software development, dotnet, .net, oracle, microsoft sql server, oracle, postgresql, mysql, oshawa, whitby, durham, toronto, ontario, canada
 %h1
-  %img{:alt => "Development Logo", :src => "/images/development-trans.png"}/
+  = image_tag('development-trans.png', :alt => 'Development Logo')
   = @intro.headline
 .inset= @intro.contents.html_safe
 #technologies
@@ -23,19 +23,19 @@
     %li
       %a{:href => "#pricing"}= @budgeting.headline
   #java.tech
-    %img{:alt => "Java", :src => "/images/tech_logos/java-64x128.png"}/
+    = image_tag("tech_logos/java-64x128.png", :alt => "Java")
     = @java.contents.html_safe
     %div{:style => "clear: both"}
   #rails.tech
-    %img{:alt => "Rails", :src => "/images/tech_logos/rails-100x128.png"}/
+    = image_tag("tech_logos/rails-100x128.png", :alt => "Ruby On Rails")
     = @rails.contents.html_safe
     %div{:style => "clear: both"}
   #dotnet.tech
-    %img{:alt => ".NET", :src => "/images/tech_logos/dotnet-117x111.png"}/
+    = image_tag("tech_logos/dotnet-117x111.png", :alt => ".NET")
     = @dotnet.contents.html_safe
     %div{:style => "clear: both"}
   #database.tech
-    %img{:alt => "PostgreSQL", :src => "/images/tech_logos/postgresql-95x51.png"}/
+    = image_tag("tech_logos/postgresql-95x51.png", :alt => "PostgreSQL")
     = @database.contents.html_safe
     %div{:style => "clear: both"}
   #expectations.tech

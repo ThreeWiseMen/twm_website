@@ -50,7 +50,7 @@ a:hover {
 }
 
 a.linkmarker {
-  background: transparent url(/images/link-marker.png) no-repeat top left;
+  background: transparent image-url('link-marker.png') no-repeat top left;
   padding: 0px 0px 5px 22px;
 }
 
@@ -83,7 +83,7 @@ img.float {
 
 #shell .banner {
   position: relative;
-  background: #006f44 url(/images/banner-background.png) no-repeat scroll top left;
+  background: #006f44 image-url('banner-background.png') no-repeat scroll top left;
   height: 180px;
   width: 100%;
 }
@@ -95,7 +95,7 @@ img.float {
   top: 0px;
   left: 700px;
   padding-left: 100px;
-  background: #fff url(/images/banner-right.png);
+  background: #fff image-url('banner-right.png');
 }
 
 #tech_logos {
@@ -122,7 +122,7 @@ img.float {
 #shell .banner .left_quote {
   width: 32px;
   height: 26px;
-  background-image: url(/images/left-quote-web.png);
+  background-image: image-url('left-quote-web.png');
   position: relative;
   top: 34px;
   left: 380px;
@@ -131,7 +131,7 @@ img.float {
 #shell .banner .right_quote {
   width: 32px;
   height: 26px;
-  background-image: url(/images/right-quote-web.png);
+  background-image: image-url('right-quote-web.png');
   position: relative;
   top: 8px;
   left: 900px;
@@ -195,7 +195,7 @@ ul#mainmenu {
   padding: 0 22px 0 22px;
   height: 56px;
   text-decoration: none;
-  background-image: url(/images/nav/menu-background.png);
+  background-image: image-url('nav/menu-background.png');
 }
 
 ul#mainmenu li {
@@ -208,13 +208,13 @@ ul#mainmenu li a {
   padding: 19px 25px 0 25px;
   float: left;
   font-size: 14px;
-  background: url(/images/nav/menudivider.png) no-repeat 0px 3px;
+  background: image-url('nav/menudivider.png') no-repeat 0px 3px;
   color: #5B920A;
 }
 
 ul#mainmenu li.active a, ul#mainmenu li:first-child.active a {
   padding-top: 18px;
-  background: transparent url(/images/nav/menu-active.png) no-repeat center top;
+  background: transparent image-url('nav/menu-active.png') no-repeat center top;
   color:#fff;
 }
 
@@ -230,7 +230,7 @@ ul#mainmenu a:link, ul#mainmenu a:visited, ul#mainmenu a:active {
 ul#mainmenu li a:hover {
   height: 37px;
   padding-top: 19px;
-  background: transparent url(/images/nav/menu-hover-trans.png) no-repeat center top;
+  background: transparent image-url('nav/menu-hover-trans.png') no-repeat center top;
   color:#fff;
 }
 
@@ -240,7 +240,7 @@ ul#submenu {
   margin: 0;
   padding: 0 22px 0 44px;
   height: 36px;
-  background-image: url(/images/nav/submenu-background.png);
+  background-image: image-url('nav/submenu-background.png');
 }
 
 ul#submenu li {
@@ -271,7 +271,7 @@ ul#submenu li a:hover {
   position: absolute;
   top: 0px;
   z-index: 100;
-  background: transparent url(/images/nav/submenu-shadow.png) repeat-x scroll;
+  background: transparent image-url('nav/submenu-shadow.png') repeat-x scroll;
   width: 960px;
   height: 12px;
 }
@@ -406,7 +406,7 @@ ul#submenu li a:hover {
   clear: both;
   width: 960px;
   height: 30px;
-  background-image: url(/images/home-bodybottom-trans.png);
+  background-image: image-url('home-bodybottom-trans.png');
 }
 
 #blog {
@@ -482,14 +482,14 @@ div#nav a {
   display: inline;
   padding: 10px;
   color: #000;
-  background: transparent url(/images/circlenav.png) no-repeat scroll center center;
+  background: transparent image-url('circlenav.png') no-repeat scroll center center;
   text-decoration: none;
   margin: 0 5px;
 }
 
 div#nav a.activeSlide {
   color: #fff;
-  background: transparent url(/images/circlenav_selected.png) no-repeat scroll center center;
+  background: transparent image-url('circlenav_selected.png') no-repeat scroll center center;
 }
 
 div#nav a:focus {

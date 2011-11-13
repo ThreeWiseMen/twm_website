@@ -1,15 +1,13 @@
 .banner
   .banner_right
     #tech_logos
-      %img{:alt => "Rogers Communications Inc.", :src => "/images/customer_logos/rogers_logo.png"}
-      %img{:alt => "McGraw Hill Ryerson", :src => "/images/customer_logos/mcgraw_hill_ryerson_logo.png"}
-      %img{:alt => "Phoenix Quality LLC", :src => "/images/customer_logos/phoenix_logo.png"}
-      %img{:alt => "CMS Web Solutions Inc.", :src => "/images/customer_logos/cms_web_solutions_logo.png"}
-      /%img{:alt => "Fugawi / Northport Systems", :src => "/images/customer_logos/fugawi_logo.png"}
-      %img{:alt => "Lakeridge Health Corp.", :src => "/images/customer_logos/lakeridge_health_logo.png"}
-      %img{:alt => "MacLaren McCann", :src => "/images/customer_logos/maclaren_mccann_logo.png"}
-      /%img{:alt => "UME Interactive Inc.", :src => "/images/customer_logos/ume_golf_logo.png"}
-      %img{:alt => "Boire Filler Group", :src => "/images/customer_logos/boire_filler_group_logo.png"}
+      = image_tag("customer_logos/rogers_logo.png", :alt => "Rogers Communications Inc.")
+      = image_tag("customer_logos/mcgraw_hill_ryerson_logo.png", :alt => "McGraw Hill Ryerson")
+      = image_tag("customer_logos/phoenix_logo.png", :alt => "Phoenix Quality LLC")
+      = image_tag("customer_logos/cms_web_solutions_logo.png", :alt => "CMS Web Solutions Inc.")
+      = image_tag("customer_logos/lakeridge_health_logo.png", :alt => "Lakeridge Health Corp.")
+      = image_tag("customer_logos/maclaren_mccann_logo.png", :alt => "MacLaren McCann")
+      = image_tag("customer_logos/boire_filler_group_logo.png", :alt => "Boire Filler Group")
   .logins
     %ul
       %li
