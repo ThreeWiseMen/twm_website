@@ -1,5 +1,9 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+//= require jquery-1.3.2.min
+//= require jquery-ui-1.7.1.custom.min
+//= require jquery.cookie
+//= require jquery.cycle.all.min
+//= require jquery.easing.1.3
+//= require jquery.qtip-1.0.0-beta3.1.min
 
 function page_init() {
 
@@ -16,6 +20,7 @@ function page_init() {
       }
     })(jQuery);
 
+/*
     if ($("#shell").length > 0) {
         $("#shell").corner("13px");
         if ($(".banner").length > 0)
@@ -24,6 +29,7 @@ function page_init() {
         if ($(".contentpaneldark").length > 0)
             $("#shell .contentpaneldark").corner("11px bl br");
     }
+*/
 
     if ($("#tech_logos").length > 0) {
         $("#tech_logos").randomize("img");

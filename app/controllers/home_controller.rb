@@ -3,11 +3,24 @@ class HomeController < ApplicationController
 
   FEED_URL = "http://feeds2.feedburner.com/threewisemenca"
 
+  helper_method :testimonials
+
   def index
     @blog_item = get_feed.entries.first
     @article = content("home")
-    @testimonials = testimonials
     render :layout => "home"
+  end
+
+  def team
+    render :layout => "content"
+  end
+
+  def developer
+    render :layout => "content"
+  end
+
+  def infrastructure
+    render :layout => "content"
   end
 
   def development
@@ -18,7 +31,6 @@ class HomeController < ApplicationController
     @database = content("appdev_database")
     @expect = content("appdev_expect")
     @budgeting = content("appdev_budgeting")
-    @testimonials = testimonials
     render :layout => "content"
   end
 
@@ -29,7 +41,6 @@ class HomeController < ApplicationController
     @communication = content("consulting_communication")
     @development = content("consulting_development")
     @testing = content("consulting_testing")
-    @testimonials = testimonials
     render :layout => "content"
   end
 
@@ -43,7 +54,6 @@ class HomeController < ApplicationController
     @dedicated2 = content("hosting_dedicated2")
     @custom = content("hosting_custom")
     @pricing = content("hosting_pricing")
-    @testimonials = testimonials
     render :layout => "content"
   end
 
@@ -55,7 +65,6 @@ class HomeController < ApplicationController
         @content = entry.content
       end
     end
-    @testimonials = testimonials
     if @title.nil?
       redirect_to "/404.html"
     else
@@ -64,17 +73,14 @@ class HomeController < ApplicationController
   end 
 
   def success
-    @testimonials = testimonials
     render :layout => "content"
   end
 
   def contact
-    @testimonials = testimonials
     render :layout => "content"
   end
 
   def privacy
-    @testimonials = testimonials
     render :layout => "content"
   end
 

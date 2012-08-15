@@ -6,26 +6,37 @@
   java, ruby on rails, ruby, xml, xsl, xsl:fo, xslt, content management, content transformation, content publishing, multi-tenant content management, oshawa, whitby, durham, toronto, ontario, canada
 .mainpanel
   %h1{:style => "display: none"} Agile Software Development
-  = @article.contents.html_safe
+  //= @article.contents.html_safe
+  %p
+    Having trouble keeping your developers focused, interested and delivering consistent results?
+  %p
+    Managing a software development team takes careful planning, and a great deal of effort to maintain
+    an environment and culture that is conducive to sustainable performance.
+  %p
+    Let us take care of that for you, and you'll see the TWM difference:
+  %ul
+    %li Well equipped, engaged developers
+    %li Relevant, current and practiced skills
+    %li Consistent results regardless of project length
+
 .service1
-  = link_to image_tag("/images/development-trans.png"), :action => "development"
-  %h2 Application Development
+  = link_to image_tag("/images/team.png"), :action => "team"
+  %h2 Managed Dev Team
   %p
-    Unparalleled technical skill and the world's best open-source foundations at your disposal.
-  %p.more= link_to "read more...", { :action => "development" }, :class => "linkmarker"
+    A cross-functional 3-person team, tuned for the work at hand, and ready to do the heavy lifting.
+  %p.more= link_to "read more...", { :action => "team" }, :class => "linkmarker"
 .service2
-  = link_to image_tag("/images/consulting-trans.png"), :action => "consulting"
-  %h2 Consulting
+  = link_to image_tag("/images/dev.png"), :action => "developer"
+  %h2 Managed Developer
   %p
-    A critical eye, creative and practical
-    solutions for your tough problems.
-  %p.more= link_to "read more...", { :action => "consulting" }, :class => "linkmarker"
+    An appropriately skilled developer, good for maintenance tasks and light work.
+  %p.more= link_to "read more...", { :action => "developer" }, :class => "linkmarker"
 .service3
-  = link_to image_tag("/images/apphosting-trans.png"), :action => "hosting"
-  %h2 Application Hosting
+  = link_to image_tag("/images/apphosting-trans.png"), :action => "infrastructure"
+  %h2 Managed Project Infrastructure
   %p
-    Unparalleled 100% uptime guarantee for qualified applications.
-  %p.more= link_to "read more...", { :action => "hosting" }, :class => "linkmarker"
+    The tools we provide during every managed on-demand engagement.
+  %p.more= link_to "read more...", { :action => "infrastructure" }, :class => "linkmarker"
 .bottom
 - if @blog_item
   #blog
