@@ -1,0 +1,36 @@
+@mixin border-radius($radius: 4pt) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius: 4pt) {
+  border-top-right-radius: $radius;
+  -moz-border-top-right-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius: 4pt) {
+  border-top-left-radius: $radius;
+  -moz-border-top-left-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius: 4pt) {
+  border-bottom-right-radius: $radius;
+  -moz-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius: 4pt) {
+  border-bottom-left-radius: $radius;
+  -moz-border-bottom-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+}
+
+@mixin vertical-gradient($start: #aaa, $end: #666, $fallback: #999) {
+  background: $fallback;
+  background: -moz-linear-gradient(top, $start, $end);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
+  background: -webkit-gradient(linear, left top, left bottom, from($start), to($end));
+}
